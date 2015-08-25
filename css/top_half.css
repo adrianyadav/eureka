@@ -1,0 +1,113 @@
+body {
+	margin: 0;
+}
+
+#slider_container {
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	height: 70vh;
+	position: relative;
+	overflow: hidden;
+}
+
+.slide {
+	height: 100%;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	z-index: -2;
+}
+
+.slide img {
+	min-height: 100%;
+	width: 100%;
+	height: auto;
+}
+
+#main_image_slide {
+	display: block;
+}
+
+@media (max-width: 710px) {
+	.slide img {
+		height: 100%;
+		min-width: 100%;
+		width: auto;
+	}
+}
+
+
+#slides {
+	height: 100%;
+}
+
+
+/*************************************
+  BUTTON STUFF
+  ************************************/
+#outer_button_container {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	top: 53%;
+}
+
+#inner_button_container {
+    width: 30%;
+    margin: 0 auto;
+    height: 80px;
+    outline-color: #000;
+    outline-style: solid;
+    outline-width: 1px;
+}
+
+.inline {
+	float: left;
+	width: 50%;
+	height: 80px;
+	/* Centers the text*/
+	display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.inline p {
+	font-size: 30px;
+}
+
+@media (max-width: 850px) {
+	#inner_button_container {
+		width: 250px;
+	}
+}
+
+#menu_button {
+	background-color: #FFF;
+}
+
+#menu_type_button {
+	background-color: #b79223;
+	color: #FFF;
+}
+
+/**********************
+Menu Type Dropdown Stuff
+***********************/
+
+li {list-style-type: none;}
+
+.menu_type_button ul li {
+	position: absolute;
+
+}
+
+.menu_type_button ul {
+	position: absolute;
+}
