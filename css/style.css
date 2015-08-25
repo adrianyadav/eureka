@@ -61,6 +61,20 @@ nav ul li a:hover {
     color: #b79223;
 }
 
+.logo_holder {
+    position: relative;
+    height: 100%;
+    width: 30%;
+    top: 0%;
+    display: inline-block;
+}
+
+.logo_holder img {
+    height: 100%;
+    display: block;
+    margin: auto;
+}
+
 
 /**
 ========================
@@ -79,7 +93,7 @@ nav ul li a:hover {
 /* This is a transparency box */
 
 #open {
-    margin-top: 200px;
+    margin-top: 150px;
     margin-left: 200px;
     padding: 20px;
     background-color: #ffffff;
