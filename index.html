@@ -4,11 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="img/favicon.png">
 
-    <!-- Fonts and External Stylesheets -->
+    <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/bebasneue.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
@@ -20,9 +26,8 @@
 
     <!-- Start of Header -->
     <header>
+        <figure class="logo_holder"> <img src="img/logo.png" alt="Log"> </figure>
         <!-- Start of Nav -->
-        <div class="logo_holder"><img src="img/logo.png" alt="Log"></div>
-
         <nav>
 
             <ul>
@@ -41,14 +46,14 @@
 
         <!-- Start of Welcome Section -->
         <section id="welcome">
-            <h1>Welcome to Eureka. </h1>
+            <h1>Welcome to Eureka </h1>
             <p> 116 Albany Street, Dunedin </p>
             <ul id="open">
-                <li>Opening Hours</li>
+                <li class="subheading">Opening Hours</li>
                 <li>Monday to Wensday - 11:30am to 10pm</li>
                 <li>Thursday and Friday - 11:30am to late</li>
                 <li>Saturday - 10:30am to late</li>
-                <li>Sundayss - 10:30am to 9pm </li>
+                <li>Sundays - 10:30am to 9pm </li>
             </ul>
         </section>
         <!-- End of Welcome section -->
@@ -71,10 +76,13 @@
 
         <!-- Start of Craft Beer Section -->
         <section id="craft">
-            <h2> Craft Beer </h2>
-            <ul>
-                <!-- Craft beers should go here later -->
-            </ul>
+            <div id="craft-heading">
+                <h2> Craft Beer </h2>
+                <ul>
+                    <!-- Craft beers should go here later -->
+                </ul>
+            </div>
+
             <p>
                 Moa Original Lager is a classicaly brewed lager created from a blend of New Zealand premium malts and world famous Nelson Sauvin hops. This beer shows an array of crisp and dry characters on the palate but also has a clean floral nose.
             </p>
@@ -136,6 +144,19 @@
     <!-- End of Main -->
 
     <footer>
+
+        <ul id="footer-info">
+            <li>116 Albany St, Dunedin</li>
+            <li>Copyright &copy; 2015 Eureka</li>
+            <li>Site by lumen </li>
+        </ul>
+
+        <ul id="contact-info">
+            <li>Contact</li>
+            <li>Email: eureka116@xtra.co.nz</li>
+            <li>Phone: (03) 477-4977 </li>
+            <li>Fax: (03) 477-1939</li>
+        </ul>
 
     </footer>
 

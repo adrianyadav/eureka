@@ -5,7 +5,7 @@
 */
 
 body {
-    font-family: 'Philosopher', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 p {
@@ -66,9 +66,12 @@ nav ul li a:hover {
 }
 
 .logo_holder {
-    height: 100%;
-    width: 30%;
     display: inline-block;
+    margin-left: 150px;
+    height: 100%;
+    width: 100%;
+    max-height: 500px;
+    max-width: 200px;
 }
 
 .logo_holder img {
@@ -87,16 +90,18 @@ nav ul li a:hover {
 #welcome {
     display: inline-block;
     height: 1000px;
-    width: 100%;
-    background-image: url("../img/welcome.JPG");
+    width: 1920px;
+    background-image: url("../img/food.JPG");
+    background-repeat: no-repeat;
 }
 
 
 /* This is a transparency box */
 
 #open {
-    margin-top: 150px;
-    margin-left: 200px;
+    font-family: 'Lato', sans-serif;
+    margin-top: 300px;
+    margin-left: 120px;
     padding: 20px;
     background-color: #ffffff;
     width: 300px;
@@ -104,6 +109,7 @@ nav ul li a:hover {
 }
 
 #welcome h1 {
+    font-family: 'Philosopher', sans-serif;
     margin-left: 100px;
     margin-top: 250px;
     font-size: 60px;
@@ -112,10 +118,16 @@ nav ul li a:hover {
 }
 
 #welcome p {
+    font-family: 'Philosopher', sans-serif;
     margin-left: 180px;
     font-size: 30px;
     color: #b79223;
     background-color: inherit;
+}
+
+.subheading {
+    font-size: 24px;
+    padding-bottom: 15px;
 }
 
 
@@ -140,6 +152,7 @@ nav ul li a:hover {
 }
 
 .pure-button {
+    border-radius: 5px;
     font-family: 'Lato', sans-serif;
     float: right;
     margin-top: -40px;
@@ -160,7 +173,7 @@ nav ul li a:hover {
 */
 
 figure img {
-    height: 300px;
+    height: 100%;
     width: 100%;
 }
 
@@ -175,9 +188,47 @@ figure img {
     background-image: url("../img/pattern1.png");
 }
 
+#craft-heading {
+    border: 1px solid black;
+}
+
 #craft h2 {
     text-align: center;
     font-size: 40px;
     color: #b79223;
     background-color: inherit;
+}
+
+
+/**
+========================
+= Footer
+========================
+*/
+
+footer {
+    background-color: black;
+    width: 100%;
+    height: 150px;
+    color: white;
+}
+
+footer li, p{
+    font-size: 20px;
+}
+
+#footer-info {
+    display: inline-block;
+    margin-top: 45px;
+    padding-left: 75px;
+}
+
+#contact-info {
+    float: right;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+#contact-info li:first-child {
+    font-size: 20px;
 }
