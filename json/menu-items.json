@@ -1,0 +1,18 @@
+{
+	"snacks" : {
+		"fries" : {
+			"name" : "fries", 
+			"gluten-free": true, 
+			"vegetarian" : false, 
+			"price" : 7.5, 
+			"description": "with aioli and tomato sauce"
+		},
+		"curry fries" : {
+			"name" : "curry fries", 
+			"gluten-free": true, 
+			"vegetarian" : false, 
+			"price" : 9.5, 
+			"description": "topped with our tangy tomato curry sauce"
+		}
+	}
+}

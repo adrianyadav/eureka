@@ -19,3 +19,4 @@ function switchDisplay (hash) {
 	oldSlide.removeClass("current_slide");
 	newSlide.addClass("current_slide");
 }
+

@@ -8,7 +8,7 @@
 	<link rel="stylesheet" type="text/css" href="css/bottom_half.css">
 	<title>Eureka</title>
 </head>
-<body>
+<body ng-app="menuApp">
 	<!-- Start of Header -->
 	<header>
 		<!-- Start of Nav -->
@@ -46,6 +46,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div id="slider_container">			
     		<div id="slides" u="slides">
         		<div id="main_image_slide" class="slide current_slide">        			
@@ -62,15 +63,25 @@
     	</svg> -->
 
 		<!--Menu Area -->
-		<p>Carrot cake croissant cake jelly-o. Tart soufflé jelly chupa chups soufflé jelly beans chocolate. Ice cream apple pie cheesecake croissant. Brownie cookie cupcake biscuit cotton candy croissant wafer gummi bears. Danish cheesecake bear claw oat cake oat cake jelly-o. Soufflé danish chocolate bar ice cream gummies cake toffee dessert. Pastry carrot cake icing candy. Croissant cotton candy candy canes chocolate cake lollipop. Chocolate cake ice cream jelly. Croissant gummies pie oat cake cheesecake. Tiramisu chocolate cake powder sweet carrot cake sesame snaps cake croissant oat cake. Jelly beans cake pastry. Sugar plum chocolate cake carrot cake pastry pudding carrot cake chupa chups tiramisu.
-Halvah topping donut candy canes topping. Sugar plum powder liquorice dessert chocolate oat cake macaroon. Marshmallow danish candy canes. Chocolate bar gingerbread chocolate bar fruitcake. Gingerbread tootsie roll topping biscuit candy canes bonbon bonbon pastry. Apple pie donut cake chocolate cake jelly-o. Sweet candy canes pudding lollipop carrot cake sugar plum. Sweet roll gummies marzipan. Carrot cake macaroon topping cookie pudding tart fruitcake candy. Jelly jujubes cupcake. </p>
-		
+	<section ng-controller="menuCtrl">
+		<ul> 
+			<li ng-repeat="item in menuItems['snacks']">
+				<h1 ng-bind="item.name"></h1>
+				<p ng-bind="item.price"></p>
+				<p ng-if="item['gluten-free']">(gf)</p>
+				<p ng-if="item.vegetarian">(v)</p>
+				<p ng-bind="item.description"></p>				
+			</li>
+		</ul>
+	</section>
 	</main>
 	<!-- End of Main -->
 	<footer>
 		
 	</footer>
+	<script src="js/angular.js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/controllers.js"></script>
 </body>
 </html>
