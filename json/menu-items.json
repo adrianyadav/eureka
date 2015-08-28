@@ -43,9 +43,9 @@
                 "gluten-free": false, 
                 "vegetarian" : false, 
                 "price" : 13.5, 
-                "description": "-Pulled Pore, Apple Slaw \n memes"
+                "description": "must complete description"
             },
-            "curry fries" : {
+            "hot platter" : {
                 "name" : "curry fries", 
                 "gluten-free": true, 
                 "vegetarian" : false, 

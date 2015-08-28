@@ -61,7 +61,7 @@
 		<!--Menu Area -->
 	<section class="menu-section" ng-controller="menuCtrl">
         <div class="pure-u-11-24">
-            <div ng-repeat="item in menuItems['snacks']['small snacks']">
+            <div ng-repeat="item in menuItems['snacks']['small snacks'] | object2Array | orderBy:'price'">
                 <h1 ng-bind="item.name"></h1>
                 <span ng-if="item['gluten-free']">(gf)</span>
                 <span ng-if="item.vegetarian">(v)</span>
@@ -73,12 +73,12 @@
         <div class="pure-u-1-24"></div>
         
         <div class="pure-u-11-24">
-            <div ng-repeat="item in menuItems['snacks']['big snacks']">
+            <div ng-repeat="item in menuItems['snacks']['big snacks'] | object2Array | orderBy:'price'">
                 <h1 ng-bind="item.name"></h1>
                 <span ng-if="item['gluten-free']">(gf)</span>
                 <span ng-if="item.vegetarian">(v)</span>
                 <p class="price" ng-bind="'$' + item.price.toFixed(2)"></p>
-                <p ng-bind="item.description"></p>				
+                <p ng-if="isString(item.description)" ng-bind="item.description"></p>				
             </div>
         </div>
 	</section>
