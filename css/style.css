@@ -199,6 +199,27 @@ figure img {
     background-color: inherit;
 }
 
+#beer-feature p {
+    line-height: 30px;
+    font-size: 26px;
+    margin-left:50px;
+    width: 500px;
+    color: white;
+}
+
+#beer-feature figure img {
+    width: 298px;
+    height: 391px;
+    margin-left: 70%;
+    margin-top:  -260px;
+}
+
+#beer-feature {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-image: url(../img/sharpedges.jpg)
+}
+
 
 /**
 ========================
@@ -213,7 +234,8 @@ footer {
     color: white;
 }
 
-footer li, p{
+footer li,
+p {
     font-size: 20px;
 }
 
