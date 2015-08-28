@@ -3,9 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/top_half.css">
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/bottom_half.css">
+    
+    <!-- Fonts and External Stylesheets -->
+    <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/bebasneue.css">
+    
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/base-min.css">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
 	<title>Eureka</title>
 </head>
 <body ng-app="menuApp">
@@ -15,10 +20,10 @@
 		<div class="logo_holder"><img src="img/logo.png"></div>
 		<nav>
 			<ul>
-				<li><div><a href="#">Food</a></div></li>
-				<li><div><a href="#">Wine</a></div></li>
-				<li><div><a href="#">Beer</a></div></li>
-				<li><div><a href="#">Contact</a></div></li>
+				<li><a href="#">Food</a></li>
+				<li><a href="#">Wine</a></li>
+				<li><a href="#">Beer</a></li>
+				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
 		<!-- End of Nav -->
@@ -31,15 +36,6 @@
 			<div id="inner_button_container">
 				<div id="menu_type_button" class="inline">
 					<p class="button_tag">Main</p>
-					<ul>
-						<li>Snacks</li>
-						<li>Weekend</li>
-						<li >Main</li>
-						<li>Whiskey</li>
-						<li>Beer</li>
-						<li>Wine</li>
-						<li>Kids</li>
-					</ul>
 				</div>
 				<div id="menu_button" class="inline">
 					<p class="button_tag">Menu</p>
@@ -64,15 +60,14 @@
 
 		<!--Menu Area -->
 	<section ng-controller="menuCtrl">
-		<ul> 
-			<li ng-repeat="item in menuItems['snacks']">
+			<div class="pure-u-1-2" ng-repeat="item in menuItems['snacks']">
 				<h1 ng-bind="item.name"></h1>
+                <span ng-if="item['gluten-free']">(gf)</span>
+				<span ng-if="item.vegetarian">(v)</span>
 				<p ng-bind="item.price"></p>
-				<p ng-if="item['gluten-free']">(gf)</p>
-				<p ng-if="item.vegetarian">(v)</p>
+				
 				<p ng-bind="item.description"></p>				
-			</li>
-		</ul>
+			</div>
 	</section>
 	</main>
 	<!-- End of Main -->
@@ -80,7 +75,6 @@
 		
 	</footer>
 	<script src="js/angular.js"></script>
-	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
 </body>

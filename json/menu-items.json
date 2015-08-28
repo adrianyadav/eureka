@@ -13,6 +13,13 @@
 			"vegetarian" : false, 
 			"price" : 9.5, 
 			"description": "topped with our tangy tomato curry sauce"
-		}
+		},
+        "seasoned wedges" : {
+            "name" : "seasoned wedges", 
+			"gluten-free": false, 
+			"vegetarian" : false, 
+			"price" : 9.5, 
+			"description": "with sour cream and salsa"            
+        }
 	}
 }
