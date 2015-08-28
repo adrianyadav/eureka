@@ -79,7 +79,7 @@ body {
 }
 
 .inline p {
-	font-size: 30px;
+	font-size: 40px;
 }
 
 @media (max-width: 850px) {
@@ -89,10 +89,13 @@ body {
 }
 
 #menu_button {
+    font-family: 'BebasNeue' !important;
 	background-color: #FFF;
 }
 
 #menu_type_button {
+    font-style: italic;
+    font-family: 'Philosopher', sans-serif;
 	background-color: #b79223;
 	color: #FFF;
 }
@@ -174,7 +177,11 @@ nav ul {
     justify-content: center;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
+    nav {
+        width : 60%;
+    }
+    
 	nav ul {
 		padding-left: 0px;
 	}
@@ -198,9 +205,37 @@ nav ul li a {
 	color: #FFF;
 	text-decoration: none;
 	z-index: 2;
-	transition: color 0.3s ease;
+	transition: color 0.15s ease;
 }
 
 nav ul li a:hover {
 	color: #b79223;
+}
+
+/*********************
+MENU
+*********************/
+
+.menu-section {
+    width: 90%;
+    margin-left : 5%;
+    margin-right : 5%;
+    display: block;
+}
+
+.divider {
+    background-color:aqua;
+}
+
+.menu-section div div h1 {
+    display : inline;   
+}
+
+.price {
+    display: inline;
+    float : right;
+}
+
+.menu-section div {
+    font-family: 'BebasLight', 'BebasNeue';
 }

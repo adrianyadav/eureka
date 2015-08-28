@@ -59,15 +59,28 @@
     	</svg> -->
 
 		<!--Menu Area -->
-	<section ng-controller="menuCtrl">
-			<div class="pure-u-1-2" ng-repeat="item in menuItems['snacks']">
-				<h1 ng-bind="item.name"></h1>
+	<section class="menu-section" ng-controller="menuCtrl">
+        <div class="pure-u-11-24">
+            <div ng-repeat="item in menuItems['snacks']['small snacks']">
+                <h1 ng-bind="item.name"></h1>
                 <span ng-if="item['gluten-free']">(gf)</span>
-				<span ng-if="item.vegetarian">(v)</span>
-				<p ng-bind="item.price"></p>
-				
-				<p ng-bind="item.description"></p>				
-			</div>
+                <span ng-if="item.vegetarian">(v)</span>
+                <p class="price" ng-bind="'$' + item.price.toFixed(2)"></p>
+                <p ng-bind="item.description"></p>				
+            </div>
+        </div>
+        
+        <div class="pure-u-1-24"></div>
+        
+        <div class="pure-u-11-24">
+            <div ng-repeat="item in menuItems['snacks']['big snacks']">
+                <h1 ng-bind="item.name"></h1>
+                <span ng-if="item['gluten-free']">(gf)</span>
+                <span ng-if="item.vegetarian">(v)</span>
+                <p class="price" ng-bind="'$' + item.price.toFixed(2)"></p>
+                <p ng-bind="item.description"></p>				
+            </div>
+        </div>
 	</section>
 	</main>
 	<!-- End of Main -->
@@ -75,7 +88,6 @@
 		
 	</footer>
 	<script src="js/angular.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
 </body>
 </html>
