@@ -187,16 +187,18 @@ nav ul {
 	}
 }
 
+@media (min-width: 1200px) {
+    nav ul li {
+        width: 120px;
+    }
+}
+
 nav ul li {
     font-family: 'BebasNeue' !important;
 	float: right;
 	font-size: 25px;
 	margin-right: 10px;
 	list-style-type: none;
-	width: 25%;
-}
-
-nav ul li {
 	width: 25%;
 }
 
