@@ -43,35 +43,34 @@
                 "gluten-free": false, 
                 "vegetarian" : false, 
                 "price" : 13.5, 
-                "description": "must complete description"
+                "description": {
+                    "1" : "pulled pore, apple slaw",
+                    "2" : "cod goujons, lettuce, tomato, and house made tartare",
+                    "3" : "beetroot, haloumi and chili jam (v)"
+                }
             },
             "hot platter" : {
-                "name" : "curry fries", 
-                "gluten-free": true, 
+                "name" : "hot platter", 
+                "gluten-free": false, 
                 "vegetarian" : false, 
-                "price" : 9.5, 
-                "description": "topped with our tangy tomato curry sauce"
+                "price" : 13.5, 
+                "description": "fish bites, squid rings, spring rolls, wedges with sweet chilli and sour cream"
             },
-            "seasoned wedges" : {
+            "nachos" : {
                 "name" : "seasoned wedges", 
-                "gluten-free": false, 
-                "vegetarian" : false, 
-                "price" : 9.5, 
-                "description": "with sour cream and salsa"            
-            },
-            "pork skewers" : {
-                "name" : "pork skewers", 
                 "gluten-free": true, 
                 "vegetarian" : false, 
-                "price" : 9.5, 
-                "description": "slow belly tossed in bbq sauce"            
+                "price" : 18.5, 
+                "description": "chicken, beef or vegetarian with melted cheese, salsa and sour cream"            
             },
-            "eureka cheese rolls" : {
-                "name" : "eureka cheese rolls", 
+            "anti-pasto platter" : {
+                "name" : "anti-pasto platter", 
                 "gluten-free": false, 
-                "vegetarian" : false, 
-                "price" : 13, 
-                "description": "with a tomato relish"            
+                "some-gf" : true,
+                "vegetarian" : false,
+                "some-v" : true,
+                "price" : 28, 
+                "description": "cheeses, cured meats, pickles and toasted ciabatta"            
             }
         }
     }

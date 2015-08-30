@@ -189,7 +189,7 @@ nav ul {
 
 @media (min-width: 1200px) {
     nav ul li {
-        width: 120px;
+        width: 120px !important;
     }
 }
 
@@ -225,12 +225,20 @@ MENU
     display: block;
 }
 
-.divider {
-    background-color:aqua;
+.menu-section h1 {
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.menu-section hr {
+    color: black;
 }
 
 .menu-section div div h1 {
     display : inline;   
+    font-size: 30px;
 }
 
 .price {
@@ -238,6 +246,19 @@ MENU
     float : right;
 }
 
-.menu-section div {
+.menu-section {
     font-family: 'BebasLight', 'BebasNeue';
+}
+
+.menu-section div div ul {
+    padding-left : 20px;
+}
+
+.desc-repeat {
+    list-style:disc;
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+    height: 100%;
 }
