@@ -8,20 +8,26 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
     }
 });
 
-app.controller('menuCtrl', function($scope, $http) {
+app.controller('menuCtrl', function($location, $scope, $http) {
     $scope.index = 0;
+    
   	$http.get('json/menu-items.json').then(function(res){
         $scope.menuItems = res.data;   
         $scope.subMenuList = Object.keys($scope.menuItems['snacks']);
-        console.log($scope.subMenuList);
     });
        
+    $scope.correctHash = function (str) {
+        return str.substring(1);
+    }
     $scope.isString = function(input) {
         return typeof input === 'string';
     };
     
     $scope.isObject = function(input) {
         return typeof input === 'object';
-        console.log(input);
+    }
+    
+    $scope.keys = function(obj) {
+        return Object.keys(obj);
     }
 });
