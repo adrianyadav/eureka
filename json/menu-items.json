@@ -1,5 +1,5 @@
 {
-    "snacks": {
+    "snack": {
         "small snacks" : {
             "name" : "small snacks",
             "content" : {
@@ -80,5 +80,7 @@
                 }
             }
         }
-    }
+    },
+    "main" : {} 
+    
 }

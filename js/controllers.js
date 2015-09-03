@@ -28,16 +28,44 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
         }
         return retStr;
     }
-})
+}).filter('capital', function() {
+    return function (item) {
+        item[0] = item[0]
+    }
+});
 
 app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) {
+    /********************************
+    Here is the stuff that actually
+    runs when the controller starts.
+    *********************************/
     $scope.waste  = 0;
     
+    
   	$http.get('json/menu-items.json').then(function(res){
-        $scope.menuItems = res.data;   
-        $scope.subMenuList = Object.keys($scope.menuItems['snacks']);
+        $scope.menuItems = res.data;
+        $scope.url = $location.path().substring(1);
+        var keys = Object.keys($scope.menuItems);
+        var allG = false;
+        
+        keys.forEach(function(element) {
+            console.log(element);
+            if (element == $scope.url) {
+                allG = true;
+            }
+        });
+        console.log(allG);
+        if (!allG) {
+            $scope.url = 'snack';
+        }
+        $scope.subMenuList = keys[$scope.url];
     });
        
+    
+    /***********************************
+    From Here I'm just definiing functions 
+    that will be used in the view.
+    ************************************/
     $scope.correctHash = function (str) {
         return str.substring(1);
     }

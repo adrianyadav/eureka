@@ -216,7 +216,7 @@ MENU
 .menu-section div div ul {
   padding-left: 20px; }
 
-.desc-repeat {
-  list-style: disc; }
+.info p {
+  text-align: center; }
 
 /*# sourceMappingURL=menu.css.map */

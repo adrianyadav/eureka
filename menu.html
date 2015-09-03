@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="css/grids-responsive-min.css">
 	<title>Eureka</title>
 </head>
-<body ng-app="menuApp">
+<body ng-app="menuApp"  ng-controller="menuCtrl">
 	<!-- Start of Header -->
 	<header>
 		<!-- Start of Nav -->
@@ -36,7 +36,7 @@
 		<div id="outer_button_container">
 			<div id="inner_button_container">
 				<div id="menu_type_button" class="inline">
-					<p class="button_tag">Main</p>
+					<p class="button_tag" ng-bind="url | capital"></p>
 				</div>
 				<div id="menu_button" class="inline">
 					<p class="button_tag">Menu</p>
@@ -55,29 +55,21 @@
     		</div>
 		</div>
 
-		<!--<svg id="circle" height="200" width="150">
-      		<path d="M 50 50 C 100,50 100,150 150,150" stroke="black" fill="none" stroke-width="5" />
-    	</svg> -->
-
-		<!--Menu Area -->
-	<section class="menu-section" ng-controller="menuCtrl">
+<!--Menu Area -->
+	<section class="menu-section">
        <div class="search">
-                <p>Search:</p>
-                <input type="text" ng-model="search" ng-change="wasteFun()">
-                <p>vegetarian:</p>
-                <input type="checkbox" ng-model="vege" ng-change="wasteFun()">
-                <p>gluten free:</p>
-                <input type="checkbox" ng-model="glute" ng-change="wasteFun()">
-            </div>
-        <div ng-repeat="subMenu in menuItems['snacks']" ng-class="subMenu.name | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
+            <p>Search:</p>
+            <input type="text" ng-model="search" ng-change="wasteFun()">
+            <p>vegetarian:</p>
+            <input type="checkbox" ng-model="vege" ng-change="wasteFun()">
+            <p>gluten free:</p>
+            <input type="checkbox" ng-model="glute" ng-change="wasteFun()">
+        </div>
+        
+        <div ng-repeat="subMenu in menuItems[url]" ng-class="subMenu.name | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
             <h1 ng-bind="subMenu.name"></h1>
             <hr>
-            <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content 
-                                                                | object2Array 
-                                                                | orderBy:'price' 
-                                                                | filter:search
-                                                                | isVegetarian:vege
-                                                                | isGF: glute">
+            <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content | object2Array | orderBy:'price' | filter:search                                                                         |isVegetarian:vege | isGF: glute">
                 <div>
                     <h1 ng-bind="item.name"></h1>
                     <span ng-if="item['gluten-free']">(gf)</span>
@@ -93,8 +85,11 @@
             </div>
         </div>
         
-        <div class="pure-u-1-1">
-            <p>Here is some lower information</p>
+        <div class="pure-u-1-1 info">
+            <p>Please inform staff of any allergies or requirements as meals can be changed to suit your needs</p>
+            <p>
+                Gluten free add $3 / gf = glutn free/ df = dairy free / gf** = gluten free available / v = vegetarian / v** = vegetarian available
+            </p>
         </div>
 	</section>
     
