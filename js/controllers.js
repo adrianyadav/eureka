@@ -6,6 +6,18 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
         }
         return out;
     }
+}).filter('isVegetarian', function () {
+  return function (items, bool) {
+    return items.filter(function (item) {
+        return item.vegetarian || item['some-v'] || !bool;
+    });
+  };
+}).filter('isGF', function () {
+    return function (items, bool) {
+        return items.filter(function (item) {
+            return item['gluten-free'] || item['some-gf'] || !bool; 
+        });
+    };
 });
 
 app.controller('menuCtrl', function($location, $scope, $http) {
@@ -27,7 +39,8 @@ app.controller('menuCtrl', function($location, $scope, $http) {
         return typeof input === 'object';
     }
     
-    $scope.keys = function(obj) {
-        return Object.keys(obj);
+    $scope.name = function(input) {
+        console.log(input);
+        return input.constructor.name;       
     }
 });

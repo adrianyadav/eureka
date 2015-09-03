@@ -61,20 +61,30 @@
 
 		<!--Menu Area -->
 	<section class="menu-section" ng-controller="menuCtrl">
-        <div class="pure-u-1-1">
-            <p>Here is some upper information</p>
-        </div>
+       <div class="search">
+                <p>Search:</p>
+                <input type="text" ng-model="search">
+                <p>vegetarian:</p>
+                <input type="checkbox" ng-model="vege">
+                <p>gluten free:</p>
+                <input type="checkbox" ng-model="glute">
+            </div>
         <div ng-repeat="subMenu in menuItems['snacks']">
-            <h1 ng-bind="keys(subMenu)[0]"></h1>
+            <h1 ng-bind="subMenu.name"></h1>
             <hr>
-            <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu | object2Array | orderBy:'price'">
+            <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content 
+                                                                | object2Array 
+                                                                | orderBy:'price' 
+                                                                | filter:search
+                                                                | isVegetarian:vege
+                                                                | isGF: glute">
                 <div>
                     <h1 ng-bind="item.name"></h1>
                     <span ng-if="item['gluten-free']">(gf)</span>
                     <span ng-if="item['some-gf']">(gf**)</span>
                     <span ng-if="item.vegetarian">(v)</span>
                     <span ng-if="item['some-v']">(v**)</span>
-                    <p class="price" ng-bind="'$' + item.price.toFixed(2)"></p>
+                    <span class="price" ng-bind="'$' + item.price.toFixed(2)"></span>
                     <p ng-if="isString(item.description)" ng-bind="item.description"></p>
                     <ul ng-if="isObject(item.description)">
                         <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>

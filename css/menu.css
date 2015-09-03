@@ -179,6 +179,14 @@ MENU
   .menu-section {
     width: 1540px !important;
     margin: 0 auto !important; } }
+.search {
+  margin-top: 20px;
+  display: inline-block;
+  float: right; }
+  .search * {
+    display: inline;
+    text-align: center; }
+
 .menu-section {
   width: 90%;
   margin-left: 5%;
@@ -189,8 +197,10 @@ MENU
     display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px; }
-  .menu-section div div div {
-    margin: 2em; }
+  .menu-section div div {
+    margin: 0 auto; }
+    .menu-section div div div {
+      margin: 2em; }
 
 .menu-section div div h1 {
   display: inline;
