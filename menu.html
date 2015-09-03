@@ -63,13 +63,13 @@
 	<section class="menu-section" ng-controller="menuCtrl">
        <div class="search">
                 <p>Search:</p>
-                <input type="text" ng-model="search">
+                <input type="text" ng-model="search" ng-change="wasteFun()">
                 <p>vegetarian:</p>
-                <input type="checkbox" ng-model="vege">
+                <input type="checkbox" ng-model="vege" ng-change="wasteFun()">
                 <p>gluten free:</p>
-                <input type="checkbox" ng-model="glute">
+                <input type="checkbox" ng-model="glute" ng-change="wasteFun()">
             </div>
-        <div ng-repeat="subMenu in menuItems['snacks']">
+        <div ng-repeat="subMenu in menuItems['snacks']" ng-class="subMenu.name | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
             <h1 ng-bind="subMenu.name"></h1>
             <hr>
             <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content 
@@ -103,6 +103,7 @@
 	<footer>
 		
 	</footer>
+	<script src="js/jquery.js"></script>
 	<script src="js/angular.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
 </body>
