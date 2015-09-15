@@ -57,23 +57,19 @@
                 },
                 "hot platter" : {
                     "name" : "hot platter", 
-                    "gluten-free": false, 
-                    "vegetarian" : false, 
                     "price" : 13.5, 
                     "description": "fish bites, squid rings, spring rolls, wedges with sweet chilli and sour cream"
                 },
                 "nachos" : {
-                    "name" : "seasoned wedges", 
+                    "name" : "nachos", 
                     "gluten-free": true, 
-                    "vegetarian" : false, 
+                    "some-v" : true,
                     "price" : 18.5, 
                     "description": "chicken, beef or vegetarian with melted cheese, salsa and sour cream"            
                 },
                 "anti-pasto platter" : {
                     "name" : "anti-pasto platter", 
-                    "gluten-free": false, 
                     "some-gf" : true,
-                    "vegetarian" : false,
                     "some-v" : true,
                     "price" : 28, 
                     "description": "cheeses, cured meats, pickles and toasted ciabatta"            
@@ -81,6 +77,198 @@
             }
         }
     },
-    "main" : {} 
+    "wine" : {
+        "champagne and methode traditionelle" : {
+            "name" : "champagne and methode traditionelle",
+            "content" : {
+                "Mumm Cordon Rouge NV" : {
+                    "name" : "Mumm Cordon Rouge NV",
+                    "imp-v" : true,
+                    "price" : 120,
+                    "description" : "No1 in France, fresh, lively, and fruity",
+                    "wine-location" : "france"
+                },
+                "deutz prestige cuvee" : {
+                    "name" : "deutz prestige cuvee",
+                    "price" : 60,
+                    "description" : "perfectly balanced with hints of apple, toasted nuts, brioche, and biscuit dough",
+                    "imp-v" : true,
+                    "wine-location" : "marlborough"
+                },
+                "deutz rose" : {
+                    "name" : "deutz rose",
+                    "price" : 55,
+                    "description" : "fresh and vibrant, a seductive and elegant wine with a rich cherry hue",
+                    "imp-v" : true,
+                    "wine-location" : "marlborough"
+                },
+                "brancott estate brut cuvee" : {
+                    "name" : "brancott estate brut cuvee",
+                    "price" : 36,
+                    "description" : "citrus and delicate piont noir fruit with superb vitality",
+                    "imp-v" : true,
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5
+                },
+                "brancott estate sparkling sauvignon blanc" : {
+                    "name" : "brancott estate sparkling sauvignon blanc",
+                    "price" : 36,
+                    "imp-v" : true,
+                    "description" : "tropical fruit and passionfruit with intense stone fruit flavours",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5
+                }
+            }
+        },
+        "sauvignon blanc" : {
+            "name" : "sauvignon blanc",
+            "content" : {
+                "church road" : {
+                    "name" : "church road",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "grassy and herbaceous characteristics overlaid and softened with lifted, fresh tropical fruit flavoursand just a touch of oak",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 10
+                },
+                "triplebank awatere valley" : {
+                    "name" :"triplebank awatere valley",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "displays typical tomato stalk characteristics from the awatere valley, with stone fruit and pineapple aromas, complemenets by fennel notes",                    
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5
+                },
+                "boudary rapaura road" : {
+                    "name" : "boudary rapaura road",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "this wine has rich,ripe tropical fruit flavours and a zesty finish",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9
+                }
+            }
+        },
+        "chardonnay" : {
+            "name" : "chardonnay",
+            "content" : {
+                "church road mcdonald series" : {
+                    "name" : "church road mcdonald series",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "A richly textured chardonnay with a delicious nuttiness on the palate",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 10
+                },
+                "boundary tuki tuki road" : {
+                    "name" : "boundary tuki tuki road",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "passionfruit and pineapple aromas, a lovely and well-balanced chardonnay",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 9
+                }
+            }
+        },
+        "riesling" : {
+            "name" : "riesling",
+            "content" : {
+                "camshorn classic riesling" : {
+                    "name" : "camshorn classic riesling",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "rich and luscious with apples strudel and honey flavours on the palate",
+                    "wine-location": "waipara",
+                    "small-price" : 9.5
+                },
+                "stoneleigh riesling" : {
+                    "name" : "stoneleigh riesling",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "citrus and lime blosson, finishing with crisp apple acidity",
+                    "wine-location": "marlborough",
+                    "small-price" : 9
+                }
+                
+            }
+        },
+        "pinot gris" : {
+            "name" : "pinot gris",
+            "content" : {
+                "8 ranges pinot gris" : {
+                    "name":"8 ranges piont gris",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "peaches with hint of pineapple and passionfruit with a long finish",
+                    "wine-location" : "central otago",
+                    "small-price" : 10
+                },
+                "stoneleigh latitude pinot gris" : {
+                    "name":"stoneleigh latitude pinot gris",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "ripe nectarine, nashi pear and honeysuckle, with a spicy floral finish",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5
+                },
+                "boundary paper lane piont gris" : {
+                    "name":"boundary paper lane piont gris",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "pear and stone fruits with gentle honey flavours",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9
+                }
+            }
+        },
+        "rose" : {
+            "name" : "ros\u00C9",
+            "content" : {
+                "8 ranges pinot noir ros" :{
+                    "name" : "8 ranges pinot noir ros",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "fresh strawberries and raspberries with a smooth, creamy texture with a crisp finish",
+                    "wine-location" : "alexandra",
+                    "small-price" : 9.5
+                }
+            }
+        },
+        "pinot noir" : {
+            "name" : "pinot noir",
+            "content" : {
+                "8 ranges 'barrel selection' 2009'" : {
+                    "name" : "8 ranges 'barrel selection' 2009'",
+                    "price" : 65,
+                    "imp-v" : true,
+                    "wine-location" : "alexandra",
+                    "description" : "cheeires and berry-fruits with a smokey savoury complexity and hints of local thyme"
+                },
+                "8 ranges 'estate' pinot noir" : {
+                    "name" : "8 ranges 'estate' pinot noir",
+                    "price" : 50,
+                    "imp-v" : true,
+                    "wine-location" : "alexandra",
+                    "description" : "spicy and savoury with bright flavours of dark cherries and boysenberries",
+                    "small-price" : 10.5
+                },
+                "the last shepherd pinot noir" : {
+                    "name" : "the last shepherd pinot noir",
+                    "price" : 48,
+                    "wine-location" : "central otago",
+                    "imp-v" : true,
+                    "description" : "dark cherry and plum with savoury toasty overtones and a lingering finish",
+                    "small-price" : 10
+                },
+                "triplebank pinot noir" : {
+                    "name" : "triplebank pinot noir",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "wine-location" : "awatere valley, marlborough",
+                    "description" : "bright berry fruit characters wih dried herb, clove and cinnamon aromas"
+                }
+            }
+        }
+    } 
     
 }

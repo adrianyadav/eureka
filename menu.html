@@ -21,9 +21,9 @@
 		<div class="logo_holder"><img src="img/logo.png"></div>
 		<nav>
 			<ul>
-				<li><a href="#">Food</a></li>
-				<li><a href="#">Wine</a></li>
-				<li><a href="#">Beer</a></li>
+				<li><a href="#/snack">Food</a></li>
+				<li><a href="#/wine">Wine</a></li>
+				<li><a href="#/beer">Beer</a></li>
 				<li><a href="#">Contact</a></li>
 			</ul>
 		</nav>
@@ -36,7 +36,7 @@
 		<div id="outer_button_container">
 			<div id="inner_button_container">
 				<div id="menu_type_button" class="inline">
-					<p class="button_tag" ng-bind="url | capital"></p>
+					<p class="button_tag" ng-bind="capital(url)"></p>
 				</div>
 				<div id="menu_button" class="inline">
 					<p class="button_tag">Menu</p>
@@ -66,17 +66,23 @@
             <input type="checkbox" ng-model="glute" ng-change="wasteFun()">
         </div>
         
-        <div ng-repeat="subMenu in menuItems[url]" ng-class="subMenu.name | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
+        <div ng-repeat="subMenu in menuItems[url]" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">       
             <h1 ng-bind="subMenu.name"></h1>
-            <hr>
+            <hr>            
             <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content | object2Array | orderBy:'price' | filter:search                                                                         |isVegetarian:vege | isGF: glute">
                 <div>
-                    <h1 ng-bind="item.name"></h1>
+                    <span class="pure-u-3-4">
+                        <h1 ng-bind="item.name"></h1>
+                        <p ng-if="item['wine-location']"ng-bind="'(' + item['wine-location'] + ')'"></p>
+                    </span>
+                    <span class="pure-u-1-5">
+                        <span ng-if="item['small-price'] "class="price" ng-bind="'$' + item['small-price'].toFixed(2)"></span>
+                        <span class="price" ng-bind="'$' + item.price.toFixed(2)"></span>
+                    </span>
                     <span ng-if="item['gluten-free']">(gf)</span>
                     <span ng-if="item['some-gf']">(gf**)</span>
                     <span ng-if="item.vegetarian">(v)</span>
-                    <span ng-if="item['some-v']">(v**)</span>
-                    <span class="price" ng-bind="'$' + item.price.toFixed(2)"></span>
+                    <span ng-if="item['some-v']">(v**)</span>                    
                     <p ng-if="isString(item.description)" ng-bind="item.description"></p>
                     <ul ng-if="isObject(item.description)">
                         <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>

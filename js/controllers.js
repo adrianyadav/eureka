@@ -9,7 +9,7 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
 }).filter('isVegetarian', function () {
   return function (items, bool) {
     return items.filter(function (item) {
-        return item.vegetarian || item['some-v'] || !bool;
+        return item.vegetarian || item['some-v'] || item['imp-v'] || !bool;
     });
   };
 }).filter('isGF', function () {
@@ -28,10 +28,6 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
         }
         return retStr;
     }
-}).filter('capital', function() {
-    return function (item) {
-        item[0] = item[0]
-    }
 });
 
 app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) {
@@ -49,12 +45,11 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
         var allG = false;
         
         keys.forEach(function(element) {
-            console.log(element);
             if (element == $scope.url) {
                 allG = true;
             }
         });
-        console.log(allG);
+
         if (!allG) {
             $scope.url = 'snack';
         }
@@ -64,7 +59,7 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
     
     /***********************************
     From Here I'm just definiing functions 
-    that will be used in the view.
+    that will e used in the view.
     ************************************/
     $scope.correctHash = function (str) {
         return str.substring(1);
@@ -78,7 +73,6 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
     }
     
     $scope.name = function(input) {
-        console.log(input);
         return input.constructor.name;       
     }
     
@@ -86,13 +80,15 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
         $scope.waste += 1;
     }
     
+    $scope.white = function (str) {
+        return str.replace(/\s/g, '');
+    }
     $scope.hasItems = function (className, waste) {
         className = $filter('removeSpaces')(className);
         var x =	angular.element("." + className).children();
         if (x['length'] == 0) {
             return true;
         }
-        console.log("got here");
         //console.log(0 == x.children()['length'] || typeof x != 'undefined');
         /*console.log(x);
         console.log("children: " + x.children() + "   children length: " + x.children()['length']);
@@ -100,4 +96,26 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
         console.log("----------------------------------------");*/
         return 0 != x.children()['length'];
     }
+    
+    $scope.capital = function (input) {
+        console.log(input);
+        if (typeof input == 'undefined') {return ""}
+        return input[0].toUpperCase() + input.substring(1);
+    }
+    
+    $scope.objLength = function (obj) {
+        console.log(Object.keys(obj).length);
+        return Object.keys(obj).length;
+    }
+    
+    $scope.$watch(function() {
+        return $location.path();
+     }, function(){
+        $scope.url = $location.path().substring(1);
+        $scope.subMenuList = keys[$scope.url];
+     });
+    /*
+    $scope.$on('$locationChangeStart', function(next, current) { 
+        $scope.subMenuList = keys[$scope.url];
+    });*/
 });
