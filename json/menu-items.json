@@ -238,7 +238,7 @@
             "name" : "pinot noir",
             "content" : {
                 "8 ranges 'barrel selection' 2009'" : {
-                    "name" : "8 ranges 'barrel selection' 2009'",
+                    "name" : "8 ranges 'barrel selection' 2009",
                     "price" : 65,
                     "imp-v" : true,
                     "wine-location" : "alexandra",
@@ -265,10 +265,206 @@
                     "price" : 45,
                     "imp-v" : true,
                     "wine-location" : "awatere valley, marlborough",
-                    "description" : "bright berry fruit characters wih dried herb, clove and cinnamon aromas"
+                    "description" : "bright berry fruit characters wih dried herb, clove and cinnamon aromas",
+                    "small-price" : 9.5
+                },
+                "8 ranges trail rider pinot noir" : {
+                    "name" :  "8 ranges trail rider pinot noir",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "wine-location" : "alexandra",
+                    "description" : "black berry-fruits with hints of the local thyme, and a slightly smokey finish",
+                    "small-price" : 9.5
+                }
+            }
+        },
+        "whiskey" : {
+            "name" : "whiskey",
+            "content" : {
+                "chivas regal 12yo" : {
+                    "name" : "chivas regal 12yo",
+                    "price" : 10,
+                    "imp-v" : true,
+                    "description" : "full, rich taste of honey and ripe apples, with vanilla, hazelnut and butterscotch notes"
+                },
+                "the glenlivet founder's reserve" : {
+                    "name" : "the glenlivet founder's reserve",
+                    "price" : 11,
+                    "imp-v" : true,
+                    "description" : "sweet, fruit notes of zesty oranges and pears, with a hint of candy toffee apples and a smooth finish"
+                },
+                "aberlour 12yo" : {
+                    "name" : "aberlour 12yo",
+                    "price" : 12,
+                    "imp-v" : true,
+                    "description" : "a fine sherried character, balanced with rich chocoloate, toffee, cinnamon, and ginger spiciness"
+                },
+                "strathisla 12yo" : {
+                    "name" : "strathisla 12yo",
+                    "price" : 14.5,
+                    "imp-v" : true,
+                    "description" : "notes of sultanas and cinnamon pastries, allspice, cooked apple and mince pies"
+                },
+                "the glenlivet 15yo french oak" : {
+                    "name" : "the glenlivet 15yo french oak",
+                    "price" : 19.5,
+                    "imp-v" : true,
+                    "description" : "intense and sweet with hints of citrus truit, notes of ripte mango, cinnamon and white pepper, with a long, creamy finish"
+                }
+            }
+        },
+        "syrah and shiraz" : {
+            "name" : "syrah and shiraz",
+            "content" : {
+                "double barrel barossa shiraz" : {
+                    "name" : "double barrel barossa shiraz",
+                    "price" : 48,
+                    "small-price" : 10,
+                    "imp-v" : true,
+                    "description" : "generous, full palate with an enticing mix of sweet red fruits and dark chocoloate"
+                },
+                "george wyndham founders reserve shiraz" : {
+                    "name" : "george wyndham founders reserve shiraz",
+                    "price" : 45,
+                    "small-price" : 9.5,
+                    "imp-v" : true,
+                    "wine-location" : "australia",
+                    "description" : "crammed with ripe plum, black cherry and mint, yet above all, profoundly soft"
+                },
+                "boundary vineyards farm rd syrah" : {
+                    "name" : "boundary vineyards farm rd syrah",
+                    "price" : 43,
+                    "small-price" : 9,
+                    "wine-location" : "hawke's bay",
+                    "imp-v" : true,
+                    "description" : "berry fruit and plum is complemented spice aromas"
+                    
+                }
+            }
+        },
+        "cabernet sauvignon and merlot" : {
+            "name" : "cabernet sauvignon and merlot",
+            "content" : {
+                "double barrel coonawarra" : {
+                    "name" : "double barrel coonawarra",
+                    "price" : 48,
+                    "small-price" : 10,
+                    "imp-v" : true,
+                    "description" : "cassis aromas with mint, dark olive and caramel notes. with sweet and toasty finish"
+                },
+                "church road macdonald series merlot" : {
+                    "name" : "church road macdonald series merlot",
+                    "price" : 48,
+                    "small-price" : 10,
+                    "imp-v" : true,
+                    "wine-location" : "hawke's bay",
+                    "description" : "rich, dark berry and plym fruits, fragrant violet notes and a touch of spice"
+                },
+                "stoneleigh merlot" : {
+                    "name" : "stoneleigh merlot",
+                    "price" : 43,
+                    "small-price" : 9,
+                    "imp-v" : true,
+                    "wine-location" : "marlborough",
+                    "description" : "ripe blackberry fruit and mocha flavours, with a lingering berry fruit finish"
+                }
+            }
+        }       
+    },
+    "main" : {
+        "to share" : {
+            "name" : "to share",
+            "content" : {
+                "fries" : {
+                    "name" : "fries",
+                    "gluten-free" : true,
+                    "price" : 7.5,
+                    "description" : "with aioli and tomato sauce"
+                },
+                "garlic bread" : {
+                    "name" : "garlic bread",
+                    "price" : 9,
+                    "description" : "toasted sourdough with our house roasted garlic butter"
+                },
+                "focaccia bread" : {
+                    "name" : "focaccia bread",
+                    "price" : 9.5,
+                    "description" : "toasted server with olive oil and dukkah"
+                },
+                "eureka cheese rolls" : {
+                    "name" : "eureka cheese rolls",
+                    "price" : 13,
+                    "description" : "with a tomato relish"
+                },
+                "nachos" : {
+                    "name" : "nachos",
+                    "gluten-free" : true,
+                    "description" : "chicken, beef or vegetarian melted cheese, salsa and sour cream",
+                    "price" : 18.5,
+                    "some-v" : true
+                },
+                "anti-pasto platter" : {
+                    "name" : "anti-pasto platter",
+                    "price" : 28,
+                    "some-gf" : true,
+                    "some-v" : true,
+                    "description" : "cheeses, cured meats, pickles and toasted ciabatta"
+                }
+            }
+        },
+        "burgers" : {
+            "name" : "burgers",
+            "content" : {
+                "cajun beef" : {
+                    "name" : "cajun beef",
+                    "price" : 19.5,
+                    "description" : "smoked chipotle aioli and onion rings"
+                },
+                "chicken" : {
+                    "name" : "chicken",
+                    "price" : 19.5,
+                    "description" : "bacon, avocado and garlic aioli"
+                },
+                "fish" : {
+                    "name" : "fish",
+                    "price" : 19.5,
+                    "description" : "f.o.d, house made tartare and a fried egg"
+                },
+                "pulled pork" : {
+                    "name" : "pulled pork",
+                    "price" : 19.5,
+                    "description" : "streaky bacon and apple slaw"
+                },
+                "vegetarian" : {
+                    "name" : "vegetarian",
+                    "vegetarian" : true,
+                    "price" : 19.5,
+                    "description" : "chickpea and lentil cake, feta and tomato relish"
+                }
+            }
+        },
+        "things too good to share" : {
+            "name" : "things too good to share",
+            "content" : {
+                "soup" : {
+                    "name" : "soup",
+                    "price" : 12,
+                    "some-gf" : true,
+                    "description" : "served with bear (gf without the bread)"
+                },
+                "seafood chowder" : {
+                    "name" : "seafood chowder",
+                    "price" : 14.5,
+                    "some-gf" : true,
+                    "description" : "thick and creamy served with bread (gf without the bread)"
+                },
+                "mushroom stack" : {
+                    "name" : "mushroom stack",
+                    "price" : 18.5,
+                    "vegetarian" : true,
+                    "description" : "risotto cake, field mushroom, feta and rocket pesto"
                 }
             }
         }
-    } 
-    
+    }
 }

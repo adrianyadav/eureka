@@ -58,15 +58,13 @@ body {
 #inner_button_container {
     width: 30%;
     margin: 0 auto;
-    height: 80px;
-    outline-color: #000;
-    outline-style: solid;
-    outline-width: 1px;
+    height: 80px !important;
+    border: 1px solid black;
 }
 
 .inline {
 	float: left;
-	width: 50%;
+	width: 50% !important;
 	height: 80px;
 	/* Centers the text*/
 	display: -webkit-flexbox;
@@ -99,7 +97,46 @@ body {
     font-style: italic;
     font-family: 'Philosopher', sans-serif;
 	background-color: $my-gold;
-	color: #FFF;
+	color: #FFF !important;
+    height : 100%;
+    z-index: 1;
+    p, a {
+        width: 100% !important;
+        padding: 0;
+        font-size: 40px;
+        
+        color: #FFF !important;
+    }
+    
+    p {
+        cursor: default;
+    }
+    
+    ul {
+        width: 100%;
+        li {
+            width: 100%;
+            height: auto !important;
+            div {
+                display: -webkit-flexbox;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+                justify-content: center;
+                background-color: #FFF;
+                a {
+                    font-family: 'BebasNeue';
+                    color: black !important;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    
 }
 
 /**********************
@@ -107,15 +144,6 @@ Menu Type Dropdown Stuff
 ***********************/
 
 li {list-style-type: none;}
-
-.menu_type_button ul li {
-	position: absolute;
-
-}
-
-.menu_type_button ul {
-	position: absolute;
-}
 
 /*************
 HEADER
@@ -128,7 +156,7 @@ header {
 	top: 0;
 	left: 0;
 	background-color: #000;
-	z-index: 1;
+	z-index: 10;
 	opacity: .6;
 }
 

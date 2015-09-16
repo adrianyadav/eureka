@@ -35,9 +35,19 @@
 		<!-- Slides Container -->
 		<div id="outer_button_container">
 			<div id="inner_button_container">
-				<div id="menu_type_button" class="inline">
-					<p class="button_tag" ng-bind="capital(url)"></p>
-				</div>
+				
+                <div class="pure-menu-item pure-menu-has-children pure-menu-allow-hover menu_type_button inline" id="menu_type_button">
+                    <p id="menuLink1" class="pure-menu-link" ng-bind="capital(url)"></p>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item" ng-repeat="title in titles">
+                            <div>
+                                <a href="#{{title}}" class="pure-menu-link" ng-bind="capital(title)"></a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+				
 				<div id="menu_button" class="inline">
 					<p class="button_tag">Menu</p>
 				</div>
@@ -98,7 +108,7 @@
             </p>
         </div>
 	</section>
-    
+ 
 	</main>
 	<!-- End of Main -->
 	<footer>
@@ -107,5 +117,6 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/angular.js"></script>
 	<script type="text/javascript" src="js/controllers.js"></script>
+	<script src="js/dropdown.js"></script>
 </body>
 </html>

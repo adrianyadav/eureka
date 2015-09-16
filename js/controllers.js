@@ -40,6 +40,7 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
     
   	$http.get('json/menu-items.json').then(function(res){
         $scope.menuItems = res.data;
+        $scope.titles = Object.keys($scope.menuItems);
         $scope.url = $location.path().substring(1);
         var keys = Object.keys($scope.menuItems);
         var allG = false;
@@ -112,7 +113,21 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
         return $location.path();
      }, function(){
         $scope.url = $location.path().substring(1);
-        $scope.subMenuList = keys[$scope.url];
+        if ($scope.menuItems) {
+            var keys = Object.keys($scope.menuItems);
+            var allG = false;
+
+            keys.forEach(function(element) {
+                if (element == $scope.url) {
+                    allG = true;
+                }
+            });
+
+            if (!allG) {
+                $scope.url = 'snack';
+            }
+            $scope.subMenuList = keys[$scope.url];
+        }
      });
     /*
     $scope.$on('$locationChangeStart', function(next, current) { 
