@@ -31,17 +31,8 @@ header {
 }
 
 
-/**
-========================
-= Nav
-========================
-*/
-
-
-
-
 /******************
-LOGO
+ =Logo
 ******************/
 
 .logo_holder {
@@ -60,7 +51,7 @@ LOGO
 
 
 /*******************
-NAV
+ =Nav
 *******************/
 
 nav {
@@ -129,10 +120,9 @@ nav ul li a:hover {
 */
 
 #welcome {
+    background-image: url("../img/welcome2.JPG");
     display: inline-block;
-    height: 1000px;
-    width: 1920px;
-    background-image: url("../img/food.JPG");
+    background-size: 100% 100%; 
     background-repeat: no-repeat;
 }
 
@@ -206,6 +196,11 @@ nav ul li a:hover {
     background-color: #b79223;
 }
 
+.button-border-white {
+    border: 1px solid white;
+    width: 200px;
+}
+
 
 /**
 ========================
@@ -243,7 +238,7 @@ figure img {
 #beer-feature p {
     line-height: 30px;
     font-size: 26px;
-    margin-left: 50px;
+    margin-left: 25%;
     width: 500px;
     color: white;
 }
@@ -251,8 +246,8 @@ figure img {
 #beer-feature figure img {
     width: 298px;
     height: 391px;
-    margin-left: 70%;
-    margin-top: -260px;
+    margin-left: 60%;
+    margin-top: -400px;
 }
 
 #beer-feature {
@@ -260,6 +255,14 @@ figure img {
     padding-bottom: 100px;
     background-image: url(../img/sharpedges.jpg)
 }
+
+/* Learn More button */
+#beer-feature div  a {
+    clear: both;
+    margin-top: 50px;
+    margin-right: 60%;
+}
+
 
 
 /**
