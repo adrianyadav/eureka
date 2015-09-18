@@ -4,11 +4,9 @@ divide wines into bubbly, red, white and rose
 
 have wine description disappear at lower sizes
 
-Corrrect ros to rose (with the fancy e)
-
 add implied gluten free to the html
 
-deploy the images for the various menus
+make the images responsive and nice
 
 filter by number of items in submenus
 

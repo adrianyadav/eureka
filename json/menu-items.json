@@ -366,9 +366,9 @@
             }
         }       
     },
-    "desserts" : {
-        "desserts" : {
-            "name" : "desserts",
+    "dessert" : {
+        "dessert" : {
+            "name" : "dessert",
             "content" : {
                 "sundae" : {
                     "name" : "sundae",
