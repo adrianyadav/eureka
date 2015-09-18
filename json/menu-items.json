@@ -1,7 +1,7 @@
 {
     "snack": {
-        "small snacks" : {
-            "name" : "small snacks",
+        "snacks" : {
+            "name" : "snacks",
             "content" : {
                 "fries" : {
                     "name" : "fries", 
@@ -37,12 +37,7 @@
                     "vegetarian" : false, 
                     "price" : 13, 
                     "description": "with a tomato relish"            
-                }
-            }
-        },
-        "big snacks" : {
-            "name" : "big snacks",
-            "content" : {
+                },
                 "sliders" : {
                     "name" : "sliders", 
                     "gluten-free": false, 
@@ -96,7 +91,7 @@
                     "wine-location" : "marlborough"
                 },
                 "deutz rose" : {
-                    "name" : "deutz rose",
+                    "name" : "deutz ros\u00C9",
                     "price" : 55,
                     "description" : "fresh and vibrant, a seductive and elegant wine with a rich cherry hue",
                     "imp-v" : true,
@@ -225,7 +220,7 @@
             "name" : "ros\u00C9",
             "content" : {
                 "8 ranges pinot noir ros" :{
-                    "name" : "8 ranges pinot noir ros",
+                    "name" : "8 ranges pinot noir ros\u00C9",
                     "price" : 45,
                     "imp-v" : true,
                     "description" : "fresh strawberries and raspberries with a smooth, creamy texture with a crisp finish",
@@ -371,6 +366,94 @@
             }
         }       
     },
+    "desserts" : {
+        "desserts" : {
+            "name" : "desserts",
+            "content" : {
+                "sundae" : {
+                    "name" : "sundae",
+                    "gluten-free" : true,
+                    "price" : 9,
+                    "description" : "ice cream with a choice of passionfruit, chocolate, caramel or mixed berry"
+                },
+                "eureka chocolate brownie" : {
+                    "name" : "eureka chocolate brownie",
+                    "some-gf" : true,
+                    "price" : 13.5,
+                    "description" : "warmed with a berry compote, ice cream and cream"
+                },
+                "sticky toffee pudding" : {
+                    "name" : "stick toffee pudding",
+                    "price" : 13.5,
+                    "description" : "a dark moist pudding, butterscotch sauce cream and ice cream"
+                },
+                "creme brulee" : {
+                    "name" : "cr\u00E8me brulee",
+                    "dairy-free" : true,
+                    "some-gf" : true,
+                    "price" : 13.5,
+                    "description" : "coconut, orange and cardamom, caramel crust served with a raspberry sorbet"
+                },
+                "banoffee pie" : {
+                    "name" : "banoffee pie",
+                    "price" : 13.5,
+                    "description" : "classic dessert of caramel, bananas, cream and ice cream"
+                }
+            }
+        }
+    },
+    "kids" : {
+        "mains" : {
+            "name" : "mains",
+            "content" : {
+                "chicken pasta" : {
+                    "name" : "chicken pasta",
+                    "price" : 14,
+                    "description" : "smoked chicken, penne pasta in a creamy sauce",
+                    "some-gf" : true,
+                    "some-v" : true
+                },
+                "chicken sandwich" : {
+                    "name" : "chicken sandwich",
+                    "price"  : 14,
+                    "description" : "chicken, bacon, lettyce, tomato, and cheese served with fries"
+                },
+                "nachos" : {
+                    "name" : "nachos",
+                    "gluten-free" : true,
+                    "price" : 14,
+                    "some-v" : true,
+                    "description" : "choice of chicken, beef or vegetarian on corn chips, melted  cheese with salsa and sour cream on the side"
+                },
+                "fish and chips" : {
+                    "name" : "fish and chips",
+                    "price" : 14,
+                    "description" : "f.o.d, fries house made tartare & heaps of tomato sauce"
+                },
+                "wrap" : {
+                    "name" : "wrap",
+                    "price" : 14,
+                    "description" : "chicken, beef or vegetarian with salad in a tortilla served wedges and sour cream",
+                    "some-v" : true
+                }
+            }
+        },
+        "desserts" : {
+            "name" : "desserts",
+            "content" : {
+                "banana split" : {
+                    "name" : "banana split",
+                    "price" : 6,
+                    "description" : "ice cream with caramel, mixed berry or chocolate"
+                },
+                "sundae" : {
+                    "name" : "sundae",
+                    "price" : 6,
+                    "description" : "ice cream with caramel, mixed berry or chocolate"
+                }
+            }
+        }
+    },
     "main" : {
         "to share" : {
             "name" : "to share",
@@ -463,6 +546,69 @@
                     "price" : 18.5,
                     "vegetarian" : true,
                     "description" : "risotto cake, field mushroom, feta and rocket pesto"
+                },
+                "venison pot pie" : {
+                    "name" : "venison pot pie",
+                    "price" : 19.5,
+                    "description" : "tender slow cooked venison topped with a cheesy mash"
+                },
+                "caesar salad" : {
+                    "name" : "caesar salad",
+                    "some-gf" : true,
+                    "some-v" : true,
+                    "price" : 18.5,
+                    "description" : "cos croutons, parmesan, anchovies, egg and bacon (with chicken $22.5)"
+                },
+                "fish and chips" : {
+                    "name" : "fish and chips",
+                    "price" : 18,
+                    "description" : "fish of the day, tartare and tomato sauce"
+                },
+                "penne pasta" : {
+                    "name" : "penne pasta",
+                    "some-v" : true,
+                    "some-gf" : true,
+                    "price" : 19.5,
+                    "description" : "smoked chicken, sundried tomatoes in a cream pesto sauce"
+                }
+            }
+        },
+        "a spot of dinner" : {
+            "name" : "a spot of dinner",
+            "content" : {
+                "blue cod" : {
+                    "name" : "blue cod",
+                    "price" : 29,
+                    "description" : "always fresh beer battered with fries and house made tartare"
+                },
+                "aged angus ribeye" : {
+                    "name" : "aged angus ribeye",
+                    "price" : 31,
+                    "gluten-free":true,
+                    "description" : "choice of garlic butter, mushroom or peppercorn sauce on roasted potatoes"
+                },
+                "chicken breast" : {
+                    "name" : "chicken breast",
+                    "price" : 29.5,
+                    "description" : "filled with a herb and cranberry stuffing on a potato rosti"
+                },
+                "lamb shank" : {
+                    "name" : "lamb shank",
+                    "price" : 32.5,
+                    "gluten-free" : true,
+                    "description" : "cardrona merino shank slow cooked server on mash"
+                },
+                "pork belly" : {
+                    "name" : "pork belly",
+                    "gluten-free" : true,
+                    "price" : 32,
+                    "description" : "twice cooked on jumara mash with a rich gravy"
+                },
+                "salmon fillet" : {
+                    "name" : "salmon fillet",
+                    "some-gf" : true,
+                    "price" : 31,
+                    "description" : "moroccan spiced stewart island slamon pan-fried served with couscous and tzatziki"
                 }
             }
         }

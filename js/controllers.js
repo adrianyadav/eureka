@@ -30,7 +30,7 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
     }
 });
 
-app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) {
+app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, $timeout) {
     /********************************
     Here is the stuff that actually
     runs when the controller starts.
@@ -52,7 +52,7 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
         });
 
         if (!allG) {
-            $scope.url = 'snack';
+            $scope.url = 'main';
         }
         $scope.subMenuList = keys[$scope.url];
     });
@@ -77,9 +77,13 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
         return input.constructor.name;       
     }
     
-    $scope.wasteFun = function () {
+    $scope.wasteFun = function (str) {
+        console.log("memes");
         $scope.waste += 1;
+        return str;
     }
+    
+    
     
     $scope.white = function (str) {
         return str.replace(/\s/g, '');
@@ -99,7 +103,6 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
     }
     
     $scope.capital = function (input) {
-        console.log(input);
         if (typeof input == 'undefined') {return ""}
         return input[0].toUpperCase() + input.substring(1);
     }
@@ -124,9 +127,10 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window) 
             });
 
             if (!allG) {
-                $scope.url = 'snack';
+                $scope.url = 'main';
             }
             $scope.subMenuList = keys[$scope.url];
+            $timeout($scope.wasteFun, 1);
         }
      });
     /*

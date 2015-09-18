@@ -92,7 +92,8 @@
                     <span ng-if="item['gluten-free']">(gf)</span>
                     <span ng-if="item['some-gf']">(gf**)</span>
                     <span ng-if="item.vegetarian">(v)</span>
-                    <span ng-if="item['some-v']">(v**)</span>                    
+                    <span ng-if="item['some-v']">(v**)</span>      
+                    <span ng-if="item['dairy-free']">(df)</span>                  
                     <p ng-if="isString(item.description)" ng-bind="item.description"></p>
                     <ul ng-if="isObject(item.description)">
                         <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>

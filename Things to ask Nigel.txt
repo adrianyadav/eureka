@@ -1,16 +1,19 @@
-Is the description of deutz prestige gramattically how it ought to be?
+change snacks (all day) and combine submenus
 
-Are fries vegetarian? If so, we need to look over the whole menu.
+divide wines into bubbly, red, white and rose
 
-Are all the prices on the wine menu per glass, or are they all per 200ml?
+have wine description disappear at lower sizes
 
-Is it OK not to show how much the small prices entail?
+Corrrect ros to rose (with the fancy e)
 
-What wines can I categorise together?
+add implied gluten free to the html
 
-Is "8 ranges pinot noir ros" a spelling mistake?
+deploy the images for the various menus
 
-Boundary vineyards farm rd syrah has a full stop in the description.
-This is inconsistent. Should it be this way?
+filter by number of items in submenus
 
-Does soup have vegetarian options?	
+change to slider in snack description to use unicode new line characters
+
+make a function for the repeated code in $scope.watch and http.get
+
+prepare angular for minification
