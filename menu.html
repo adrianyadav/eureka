@@ -8,6 +8,7 @@
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/bebasneue.css">
     
+    <link rel="stylesheet" href="eureka-bootstrap/css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" href="css/base-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
@@ -91,7 +92,7 @@
                     <span ng-if="item.vegetarian">(v)</span>
                     <span ng-if="item['some-v']">(v**)</span>      
                     <span ng-if="item['dairy-free']">(df)</span>                  
-                    <p ng-if="isString(item.description)" ng-bind="item.description"></p>
+                    <p ng-if="isString(item.description)" ng-bind="item.description" ng-class="{{menuItems[url].hide ? 'hide' : ''}}"></p>
                     <ul ng-if="isObject(item.description)">
                         <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>
                     </ul>
