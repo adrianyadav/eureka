@@ -15,7 +15,7 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
 }).filter('isGF', function () {
     return function (items, bool) {
         return items.filter(function (item) {
-            return item['gluten-free'] || item['some-gf'] || !bool; 
+            return item['gluten-free'] || item['some-gf'] || item['imp-gf'] || !bool; 
         });
     };
 }).filter('removeSpaces', function () {
@@ -42,21 +42,24 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
         $scope.menuItems = res.data;
         $scope.titles = Object.keys($scope.menuItems);
         $scope.url = $location.path().substring(1);
+        $scope.setUrl();
+        var keys = Object.keys($scope.menuItems);        
+    });
+    
+    $scope.setUrl = function() {
         var keys = Object.keys($scope.menuItems);
         var allG = false;
-        
         keys.forEach(function(element) {
             if (element == $scope.url) {
                 allG = true;
             }
         });
-
         if (!allG) {
             $scope.url = 'main';
         }
         $scope.subMenuList = keys[$scope.url];
-    });
-       
+    }
+        
     
     /***********************************
     From Here I'm just definiing functions 
@@ -83,22 +86,16 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
         return str;
     }
     
-    
-    
     $scope.white = function (str) {
         return str.replace(/\s/g, '');
     }
+    
     $scope.hasItems = function (className, waste) {
         className = $filter('removeSpaces')(className);
         var x =	angular.element("." + className).children();
         if (x['length'] == 0) {
             return true;
         }
-        //console.log(0 == x.children()['length'] || typeof x != 'undefined');
-        /*console.log(x);
-        console.log("children: " + x.children() + "   children length: " + x.children()['length']);
-        console.log(0 == x.children()['length']);
-        console.log("----------------------------------------");*/
         return 0 != x.children()['length'];
     }
     
@@ -117,24 +114,8 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
      }, function(){
         $scope.url = $location.path().substring(1);
         if ($scope.menuItems) {
-            var keys = Object.keys($scope.menuItems);
-            var allG = false;
-
-            keys.forEach(function(element) {
-                if (element == $scope.url) {
-                    allG = true;
-                }
-            });
-
-            if (!allG) {
-                $scope.url = 'main';
-            }
-            $scope.subMenuList = keys[$scope.url];
+            $scope.setUrl();
             $timeout($scope.wasteFun, 1);
         }
-     });
-    /*
-    $scope.$on('$locationChangeStart', function(next, current) { 
-        $scope.subMenuList = keys[$scope.url];
-    });*/
+    });
 });

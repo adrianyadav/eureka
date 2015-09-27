@@ -1,14 +1,8 @@
-have wine description disappear at lower sizes
+divide wines into bubbly, red, white and rose
 
-make the images responsive and nice
-
-add hide data to wine
-
-correct the outline below the menu button
+add imp-v stuff from the menu
 __________________________________
 
-Is the 'all day snacks' thing ok?
+//////filter by number of items in submenus
 
-Are the arrangments of submenus fine?
-
-Are the size of the menus fine?
+are seasoned wedges and curry fries vegetarian?

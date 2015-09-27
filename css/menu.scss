@@ -1,4 +1,7 @@
 $my-gold: #b79223;
+p {
+    margin-bottom: 0;
+}
 
 body {
 	margin: 0;
@@ -10,7 +13,6 @@ body {
 	top: 0px;
 	height: 70vh;
 	position: relative;
-	overflow: hidden;
 }
 
 .slide {
@@ -19,25 +21,39 @@ body {
 	display: none;
 	position: absolute;
 	z-index: -2;
+    
 }
 
 .slide img {
 	min-height: 100%;
 	width: 100%;
 	height: auto;
+    background-size: cover;
 }
 
-#main_image_slide {
+#slides {
 	display: block;
+    background-size: cover;
+}
+
+
+@media (min-width: 2700px) {
+    .slide img {
+        width: 100%;
+    }
+}
+/*@media (max-width: 1200px) {
+    .slide img {
+        overflow-x: hidden;
+    }
 }
 
 @media (max-width: 710px) {
 	.slide img {
 		height: 100%;
 		min-width: 100%;
-		width: auto;
 	}
-}
+}*/
 
 
 #slides {
@@ -52,7 +68,7 @@ body {
 	position: absolute;
 	width: 100%;
 	text-align: center;
-	top: 53%;
+	bottom: 10%;
 }
 
 #inner_button_container {
@@ -82,9 +98,9 @@ body {
 	font-size: 40px;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 1150px) {
 	#inner_button_container {
-		width: 250px;
+		width: 350px;
 	}
 }
 
@@ -108,18 +124,18 @@ body {
         width: 100% !important;
         padding: 0;
         font-size: 40px;
+        text-align: center;
         
         color: #FFF !important;
     }
     
-    .btn p {
-        display: inline;
-        margin: 0 !important;
-        width: 100%;
-    }
-    
     p {
         cursor: default;
+    }
+    
+    p:after {
+        font-size: 30px;
+        padding: 0;
     }
     
     ul {
@@ -258,6 +274,12 @@ nav ul li a:hover {
 MENU
 *********************/
 
+@media (max-width: 600px) {
+    .hideit {
+        display: none;
+    }
+}
+
 @media (min-width: 1650px) {
     .menu-section {
         width: 1540px !important;
@@ -321,4 +343,8 @@ MENU
 
 .info p {
     text-align: center;
+}
+
+.extraInfo {
+    font-size: 30px;
 }

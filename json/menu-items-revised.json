@@ -9,16 +9,14 @@
                     "gluten-free": true, 
                     "vegetarian" : false, 
                     "price" : 7.5, 
-                    "description": "with aioli and tomato sauce",
-                    "imp-v" : true
+                    "description": "with aioli and tomato sauce"
                 },
                 "curry fries" : {
                     "name" : "curry fries", 
                     "gluten-free": true, 
                     "vegetarian" : false, 
                     "price" : 9.5, 
-                    "description": "topped with our tangy tomato curry sauce",
-                    "imp-v" : true
+                    "description": "topped with our tangy tomato curry sauce"
                 },
                 "seasoned wedges" : {
                     "name" : "seasoned wedges", 
@@ -39,8 +37,7 @@
                     "gluten-free": false, 
                     "vegetarian" : false, 
                     "price" : 13, 
-                    "description": "with a tomato relish",
-                    "imp-v" : true
+                    "description": "with a tomato relish"            
                 },
                 "sliders" : {
                     "name" : "sliders", 
@@ -78,8 +75,8 @@
     },
     "wine" : {
         "hide" : true,
-        "champagne and methode traditionelle" : {
-            "name" : "champagne and methode traditionelle",
+        "sparkling" : {
+            "name" : "sparkling",
             "content" : {
                 "Mumm Cordon Rouge NV" : {
                     "name" : "Mumm Cordon Rouge NV",
@@ -126,6 +123,41 @@
                 }
             }
         },
+        "white" : {
+            "name" : "white",
+            "content" : {
+                "church road" : {
+                    "name" : "church road",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "grassy and herbaceous characteristics overlaid and softened with lifted, fresh tropical fruit flavoursand just a touch of oak",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 10,
+                    "imp-gf" : true
+                },
+                "triplebank awatere valley" : {
+                    "name" :"triplebank awatere valley",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "displays typical tomato stalk characteristics from the awatere valley, with stone fruit and pineapple aromas, complemenets by fennel notes",                    
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                },
+                "boudary rapaura road" : {
+                    "name" : "boudary rapaura road",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "this wine has rich,ripe tropical fruit flavours and a zesty finish",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "red" : "",
+        
+       
         "sauvignon blanc" : {
             "name" : "sauvignon blanc",
             "content" : {
@@ -236,21 +268,7 @@
                     "imp-gf" : true
                 }
             }
-        },
-        "rose" : {
-            "name" : "ros\u00C9",
-            "content" : {
-                "8 ranges pinot noir ros" :{
-                    "name" : "8 ranges pinot noir ros\u00C9",
-                    "price" : 45,
-                    "imp-v" : true,
-                    "description" : "fresh strawberries and raspberries with a smooth, creamy texture with a crisp finish",
-                    "wine-location" : "alexandra",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
-                }
-            }
-        },
+        },        
         "pinot noir" : {
             "name" : "pinot noir",
             "content" : {
@@ -296,46 +314,6 @@
                     "wine-location" : "alexandra",
                     "description" : "black berry-fruits with hints of the local thyme, and a slightly smokey finish",
                     "small-price" : 9.5,
-                    "imp-gf" : true
-                }
-            }
-        },
-        "whiskey" : {
-            "name" : "whiskey",
-            "content" : {
-                "chivas regal 12yo" : {
-                    "name" : "chivas regal 12yo",
-                    "price" : 10,
-                    "imp-v" : true,
-                    "description" : "full, rich taste of honey and ripe apples, with vanilla, hazelnut and butterscotch notes",
-                    "imp-gf" : true
-                },
-                "the glenlivet founder's reserve" : {
-                    "name" : "the glenlivet founder's reserve",
-                    "price" : 11,
-                    "imp-v" : true,
-                    "description" : "sweet, fruit notes of zesty oranges and pears, with a hint of candy toffee apples and a smooth finish",
-                    "imp-gf" : true
-                },
-                "aberlour 12yo" : {
-                    "name" : "aberlour 12yo",
-                    "price" : 12,
-                    "imp-v" : true,
-                    "description" : "a fine sherried character, balanced with rich chocoloate, toffee, cinnamon, and ginger spiciness",
-                    "imp-gf" : true
-                },
-                "strathisla 12yo" : {
-                    "name" : "strathisla 12yo",
-                    "price" : 14.5,
-                    "imp-v" : true,
-                    "description" : "notes of sultanas and cinnamon pastries, allspice, cooked apple and mince pies",
-                    "imp-gf" : true
-                },
-                "the glenlivet 15yo french oak" : {
-                    "name" : "the glenlivet 15yo french oak",
-                    "price" : 19.5,
-                    "imp-v" : true,
-                    "description" : "intense and sweet with hints of citrus truit, notes of ripte mango, cinnamon and white pepper, with a long, creamy finish",
                     "imp-gf" : true
                 }
             }
@@ -402,7 +380,62 @@
                     "imp-gf" : true
                 }
             }
-        }       
+        },
+        
+        "rose" : {
+            "name" : "ros\u00C9",
+            "content" : {
+                "8 ranges pinot noir ros" :{
+                    "name" : "8 ranges pinot noir ros\u00C9",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "fresh strawberries and raspberries with a smooth, creamy texture with a crisp finish",
+                    "wine-location" : "alexandra",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                }
+            }
+        },     
+        "whiskey" : {
+            "name" : "whiskey",
+            "content" : {
+                "chivas regal 12yo" : {
+                    "name" : "chivas regal 12yo",
+                    "price" : 10,
+                    "imp-v" : true,
+                    "description" : "full, rich taste of honey and ripe apples, with vanilla, hazelnut and butterscotch notes",
+                    "imp-gf" : true
+                },
+                "the glenlivet founder's reserve" : {
+                    "name" : "the glenlivet founder's reserve",
+                    "price" : 11,
+                    "imp-v" : true,
+                    "description" : "sweet, fruit notes of zesty oranges and pears, with a hint of candy toffee apples and a smooth finish",
+                    "imp-gf" : true
+                },
+                "aberlour 12yo" : {
+                    "name" : "aberlour 12yo",
+                    "price" : 12,
+                    "imp-v" : true,
+                    "description" : "a fine sherried character, balanced with rich chocoloate, toffee, cinnamon, and ginger spiciness",
+                    "imp-gf" : true
+                },
+                "strathisla 12yo" : {
+                    "name" : "strathisla 12yo",
+                    "price" : 14.5,
+                    "imp-v" : true,
+                    "description" : "notes of sultanas and cinnamon pastries, allspice, cooked apple and mince pies",
+                    "imp-gf" : true
+                },
+                "the glenlivet 15yo french oak" : {
+                    "name" : "the glenlivet 15yo french oak",
+                    "price" : 19.5,
+                    "imp-v" : true,
+                    "description" : "intense and sweet with hints of citrus truit, notes of ripte mango, cinnamon and white pepper, with a long, creamy finish",
+                    "imp-gf" : true
+                }
+            }
+        }
     },
     "dessert" : {
         "dessert" : {
@@ -412,35 +445,30 @@
                     "name" : "sundae",
                     "gluten-free" : true,
                     "price" : 9,
-                    "description" : "ice cream with a choice of passionfruit, chocolate, caramel or mixed berry",
-                    "imp-v" : true
+                    "description" : "ice cream with a choice of passionfruit, chocolate, caramel or mixed berry"
                 },
                 "eureka chocolate brownie" : {
                     "name" : "eureka chocolate brownie",
                     "some-gf" : true,
                     "price" : 13.5,
-                    "description" : "warmed with a berry compote, ice cream and cream",
-                    "imp-v" : true
+                    "description" : "warmed with a berry compote, ice cream and cream"
                 },
                 "sticky toffee pudding" : {
                     "name" : "stick toffee pudding",
                     "price" : 13.5,
-                    "description" : "a dark moist pudding, butterscotch sauce cream and ice cream",
-                    "imp-v" : true
+                    "description" : "a dark moist pudding, butterscotch sauce cream and ice cream"
                 },
                 "creme brulee" : {
                     "name" : "cr\u00E8me brulee",
                     "dairy-free" : true,
                     "some-gf" : true,
                     "price" : 13.5,
-                    "description" : "coconut, orange and cardamom, caramel crust served with a raspberry sorbet",
-                    "imp-v" : true
+                    "description" : "coconut, orange and cardamom, caramel crust served with a raspberry sorbet"
                 },
                 "banoffee pie" : {
                     "name" : "banoffee pie",
                     "price" : 13.5,
-                    "description" : "classic dessert of caramel, bananas, cream and ice cream",
-                    "imp-v" : true
+                    "description" : "classic dessert of caramel, bananas, cream and ice cream"
                 }
             }
         }
@@ -487,14 +515,12 @@
                 "banana split" : {
                     "name" : "banana split",
                     "price" : 6,
-                    "description" : "ice cream with caramel, mixed berry or chocolate",
-                    "imp-v" : true
+                    "description" : "ice cream with caramel, mixed berry or chocolate"
                 },
                 "sundae" : {
                     "name" : "sundae",
                     "price" : 6,
-                    "description" : "ice cream with caramel, mixed berry or chocolate",
-                    "imp-v" : true
+                    "description" : "ice cream with caramel, mixed berry or chocolate"
                 }
             }
         }
@@ -507,26 +533,22 @@
                     "name" : "fries",
                     "gluten-free" : true,
                     "price" : 7.5,
-                    "description" : "with aioli and tomato sauce",
-                    "imp-v" : true
+                    "description" : "with aioli and tomato sauce"
                 },
                 "garlic bread" : {
                     "name" : "garlic bread",
                     "price" : 9,
-                    "description" : "toasted sourdough with our house roasted garlic butter",
-                    "imp-v" : true
+                    "description" : "toasted sourdough with our house roasted garlic butter"
                 },
                 "focaccia bread" : {
                     "name" : "focaccia bread",
                     "price" : 9.5,
-                    "description" : "toasted server with olive oil and dukkah",
-                    "imp-v" : true
+                    "description" : "toasted server with olive oil and dukkah"
                 },
                 "eureka cheese rolls" : {
                     "name" : "eureka cheese rolls",
                     "price" : 13,
-                    "description" : "with a tomato relish",
-                    "imp-v" : true
+                    "description" : "with a tomato relish"
                 },
                 "nachos" : {
                     "name" : "nachos",

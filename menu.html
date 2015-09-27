@@ -8,17 +8,10 @@
     <!-- Fonts and External Stylesheets -->
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/bebasneue.css">
-<<<<<<< HEAD
-<<<<<<< HEAD
-
     <link rel="stylesheet" href="eureka-bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
-=======
-=======
->>>>>>> parent of 79072f5... Ready to use bootstrap
     
 	<link rel="stylesheet" type="text/css" href="css/menu.css">
->>>>>>> parent of 79072f5... Ready to use bootstrap
     <link rel="stylesheet" href="css/base-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
@@ -44,45 +37,31 @@
     <!-- Start of Main -->
     <main>
         <!-- Slides Container -->
-        <div id="outer_button_container">
+        
+
+        <div id="slider_container">
+            <div id="outer_button_container">
             <div id="inner_button_container">
-                <!--<div class="dropdown inline" id="menu_type_button">
-                    <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="menu_type_button">
-                        <p ng-bind="capital(url)"></p>
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li class="pure-menu-item" ng-repeat="title in titles">
-                                <a href="#{{title}}" class="pure-menu-link" ng-bind="capital(title)"></a>
-                        </li>
-                    </ul>
-                </div>-->
                 <div class="pure-menu-item pure-menu-has-children pure-menu-allow-hover menu_type_button inline" id="menu_type_button">
                     <p id="menuLink1" class="pure-menu-link" ng-bind="capital(url)"></p>
-                    
-
-
                     <ul class="pure-menu-children">
-                        <li class="pure-menu-item" ng-repeat="title in titles">
+                        <li class="pure-menu-item" ng-repeat="title in titles" >
                             <div>
-                                <a href="#{{title}}" class="pure-menu-link" ng-bind="capital(title)"></a>
+                                <a href="#{{title}}" class="pure-menu-link" ng-bind="capital(title)"stlye="z-index: 5;"></a>
                             </div>
                         </li>
-                        
                     </ul>
+                </div>
+                                
                 <div id="menu_button" class="inline">
                     <p class="button_tag">Menu</p>
                 </div>
             </div>
-
-
         </div>
-        </div>
-
-        <div id="slider_container">
-            <div id="slides" u="slides">
-                <div id="main_image_slide" class="slide current_slide">
-                    <img u="image" ng-src="img/menu/{{url}}.jpg" />
+            <div id="slides" u="slides" ng-style="{'background-image': 'url(img/menu/' + url + '.jpg'}">
+                <div id="main_image_slide" class="slide current_slide" >
+                   <!--ng-style="{'background-image': 'url(img/menu/' + url + '.jpg'}"-->
+                    <!--<img u="image" ng-src="img/menu/{{url}}.jpg" />-->
                 </div>
             </div>
         </div>
@@ -101,6 +80,7 @@
 
             <div ng-repeat="subMenu in menuItems[url]" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
                 <h1 ng-bind="subMenu.name"></h1>
+                <span ng-bind="subMenu.extra" class="extraInfo"></span>
                 <hr>
                 <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content | object2Array | orderBy:'price' | filter:search                                                                         |isVegetarian:vege | isGF: glute">
                     <div>
@@ -111,20 +91,19 @@
                         <span class="pure-u-1-5">
                         <span ng-if="item['small-price'] "class="price" ng-bind="'$' + item['small-price'].toFixed(2)"></span>
                         <span class="price" ng-bind="'$' + item.price.toFixed(2)"></span>
-<<<<<<< HEAD
                         </span>
                         <span ng-if="item['gluten-free']">(gf)</span>
                         <span ng-if="item['some-gf']">(gf**)</span>
                         <span ng-if="item.vegetarian">(v)</span>
                         <span ng-if="item['some-v']">(v**)</span>
                         <span ng-if="item['dairy-free']">(df)</span>
-                        <p ng-if="isString(item.description)" ng-bind="item.description" ng-class="{{menuItems[url].hide ? 'hide' : ''}}"></p>
+                        <p ng-if="isString(item.description)" ng-bind="item.description" ng-class="{hideit : menuItems[url].hide}"></p>
                         <ul ng-if="isObject(item.description)">
                             <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>
                         </ul>
                     </div>
                 </div>
-=======
+
                     </span>
                     <span ng-if="item['gluten-free']">(gf)</span>
                     <span ng-if="item['some-gf']">(gf**)</span>
@@ -135,8 +114,7 @@
                     <ul ng-if="isObject(item.description)">
                         <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>
                     </ul>
-                </div>				
->>>>>>> parent of 79072f5... Ready to use bootstrap
+                </div>
             </div>
 
             <div class="pure-u-1-1 info">
