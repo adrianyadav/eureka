@@ -1,15 +1,18 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="We offer top quality New Zealand craft beers, housing 15 different and ever changing brews on tap. Specialities include Lunch, Dinner, Coffee and Drinks. Dunedin New Zealand">
+    <meta name="author" content="">
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="img/favicon.png">
-    
-        <link rel="stylesheet" href="css/reset.css">
+    <title>Eureka Cafe &#38; Bar</title>
 
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
@@ -17,154 +20,315 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Eureka</title>
+
+    <!-- Custom CSS -->
+    <link href="css/landing-page.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
 
 <body>
 
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top topnav header" role="navigation">
+        <div class="container topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
 
-    <!-- Start of Header -->
-    <header>
-        <div class="logo_holder"><img src="img/logo.png" alt="Logo"></div>
+                <a class="navbar-brand" rel="home" href="#" title="Eureka">
 
-        <!-- Start of Nav -->
-        <nav>
-
-            <ul>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Wine</a></li>
-                <li><a href="#">Beer</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-        <!-- End of Nav -->
-    </header>
-    <!-- End of Header -->
-
-    <!-- Start of Main -->
-    <main>
-
-        <!-- Start of Welcome Section -->
-        <section id="welcome">
-            <h1>Welcome to Eureka </h1>
-            <p> 116 Albany Street, Dunedin </p>
-            <ul id="open">
-                <li class="subheading">Opening Hours</li>
-                <li>Monday to Wensday - 11:30am to 10pm</li>
-                <li>Thursday and Friday - 11:30am to late</li>
-                <li>Saturday - 10:30am to late</li>
-                <li>Sundays - 10:30am to 9pm </li>
-            </ul>
-        </section>
-        <!-- End of Welcome section -->
-
-        <!-- Start of Intro Section -->
-        <section id="intro">
-            <p>Supposedly 'Eureka' means 'I have found it' and dont worry fair patrons, you have found it! With a mixture of personalities among our staff to make each wary traveler's experience a comfortable, unpretentious one might ask 'how can such a place exist?' The answer is, it just does!</p>
-            <p>So fine person who stumbled through our doors with glee or anticiaption, thank you for reading this far and welcome. Take a look around, make yourself known and explore our menus. Drool over our craft beers and wine, and relax.</p>
-            <p>Eureka
-                <br>Season. Social. Simple.
-            </p>
-
-            <div><a class="pure-button" href="#">About Us</a></div>
-        </section>
-        <!-- End of Intro section -->
-
-        <figure>
-            <img src="img/pallarax1.jpg" alt="Pallarax 1">
-        </figure>
-
-        <!-- Start of Craft Beer Section -->
-        <section id="craft">
-            <div id="craft-heading">
-                <h2> Craft Beer </h2>
-                <ul>
-                    <!-- Craft beers should go here later -->
+                </a>
+                <img class="img-responsive center-block index" src="img/logo.png" alt="Eureka">
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="#food">FOOD</a>
+                    </li>
+                    <li>
+                        <a href="#wine">WINE</a>
+                    </li>
+                    <li>
+                        <a href="#beer">BEER</a>
+                    </li>
+                    <li>
+                        <a href="#contact">CONTACT</a>
+                    </li>
                 </ul>
             </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-            <div id="beer-feature">
-                <p>
-                    Moa Original Lager is a classicaly brewed lager created from a blend of New Zealand premium malts and world famous Nelson Sauvin hops. This beer shows an array of crisp and dry characters on the palate but also has a clean floral nose.
-                </p>
-                <div><a class="pure-button button-border-white" href="#">Learn More</a></div>
-                <figure><img src="img/moa.png" alt="Moa"></figure>
+
+    <!-- Header -->
+    <div class="intro-header">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="intro-message">
+                        <ul id="open">
+                            <li class="subheading">Opening Hours</li>
+                            <li>Monday to Wensday - 11:30am to 10pm</li>
+                            <li>Thursday and Friday - 11:30am to late</li>
+                            <li>Saturday - 10:30am to late</li>
+                            <li>Sundays - 10:30am to 9pm </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-    
-        </section>
-        <!-- End of Craft Beer Section -->
 
-        <figure>
-            <img src="#" alt="Pallarax image 2">
-        </figure>
+        </div>
+        <!-- /.container -->
 
-        <!-- Start of Latest News -->
-        <section>
-            <h2> Latest News </h2>
-            <ul>
-                <li>June 27 - </li>
-                <li>June 24 - </li>
-                <li>June 30 - </li>
-                <li>August 20 - </li>
-                <li>May 15 - </li>
-            </ul>
-        </section>
-        <!-- End of Latest News -->
+    </div>
+    <!-- /.intro-header -->
 
-        <figure>
-            <img src="#" alt="Pallarax image 3">
-        </figure>
+    <!-- Page Content -->
+    <div class="content-section-a">
 
-        <!-- Start of Menu -->
-        <section>
-            <ul>
-                <li>Day</li>
-                <li>Dinner</li>
-                <li>Wine</li>
-            </ul>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Introduction</h2>
+                    <p class="lead">Supposedly 'Eureka' means 'I have found it' and dont worry fair patrons, you have found it! With a mixture of personalities among our staff to make each wary traveler's experience a comfortable, unpretentious one might ask 'how can such a place exist?'
+                    </p>
 
-            <h2> Recommended Wines </h2>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
-            <div class="button">View More</div>
-            <figure>
-                <img src="#" alt="Wine on Menu">
-            </figure>
+                    <p class="lead">
+                        The answer is, it just does! So fine person who stumbled through our doors with glee or anticiaption, thank you for reading this far and welcome. Take a look around, make yourself known and explore our menus. Drool over our craft beers and wine, and relax. Eureka Season. Social. Simple.</p>
+                </div>
+            </div>
 
-        </section>
-        <!-- End of Menu -->
+        </div>
+    </div>
+    <!-- /.container -->
 
-        <figure>
-            <img src="#" alt="Pallarax image 4">
-        </figure>
 
-    </main>
-    <!-- End of Main -->
+    <div class="banner3">
 
-    <footer>
+        <div class="container">
 
-        <ul id="footer-info">
-            <li>116 Albany St, Dunedin</li>
-            <li>Copyright &copy; 2015 Eureka</li>
-            <li>Site by lumen </li>
-        </ul>
+            <div class="row">
+                <div class="col-lg-6">
+                </div>
+            </div>
 
-        <ul id="contact-info">
-            <li>Contact</li>
-            <li>Email: eureka116@xtra.co.nz</li>
-            <li>Phone: (03) 477-4977 </li>
-            <li>Fax: (03) 477-1939</li>
-        </ul>
+        </div>
+        <!-- /.container -->
+
+    </div>
+    <!-- /.content-section-a -->
+
+    <div class="content-section-b">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading"> Beers </h2>
+                    <p class="lead">Beer information</p>
+                </div>
+                <div class="col-lg-5 col-lg-offset-1  col-sm-pull-6  col-sm-6">
+                    <hr class="section-heading-spacer">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Guest Beers</h2>
+                    <img src="img/moa.png" class="img-responsive">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+
+
+    </div>
+
+
+
+
+    <div class="banner4">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                </div>
+            </div>
+
+        </div>
+        <!-- /.container -->
+
+    </div>
+
+    <div class="content-section-c center">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="clearfix"></div>
+                    <h2 class="section-heading">Latest Beers</h2>
+                    <ul class="center-test">
+                        <li> September 24 - Three Boys Wheat now available </li>
+                        <li> September 24 - Moa South Pacific I.P.A now available </li>
+                        <li> September 24 - Scotts Brewery Pinot Porter now </li>
+                        <li> September 22 - Golden Eagle Red I.P.A now available </li>
+                        <li> September 20 - Golden Eagle Marilyn now available </li>
+                        <li class="hidden"> September 20 - Tuatara American Pale Ale now available </li>
+                        <li class="hidden"> September 17 - Renaissance Paradox Pilsner now available </li>
+                        <li class="hidden"> September 17 - 8 Wired Flat White (Nitro) now available </li>
+                        <li class="hidden"> September 14 - Tuatara Iti now available </li>
+                        <li class="hidden"> September 14 - Three Boys I.P.A now available </li>
+                        <li class="hidden"> September 10 - Renaissance Elemental Porter now </li>
+
+                        <button type="button" id="showlist" class="btn btn-default mr center-block">Show full list</button>
+
+                        <script>
+                            $(document).ready(function () {
+                                $("#showlist").click(function () {
+                                    $('li').removeClass('hidden');
+                                });
+
+                               
+
+                            });
+                        </script>
+
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="banner2">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-6">
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <!-- /.content-section-a -->
+
+
+    <div class="container center-form" id="contact">
+        <div class="row">
+            <form action="test.php" method="post">
+                <div class="col-lg-12">
+                    <h2> Send us  a message </h2>
+                    <div class="form-group">
+                        <label for="InputName">Your Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail">Your Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputMessage">Message</label>
+                        <div class="input-group">
+                            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputReal">What is four + three? (Ensures your not a robot)</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputReal" id="InputReal" required pattern=[7]>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                </div>
+            </form>
+            <hr class="featurette-divider hidden-lg">
+
+        </div>
+
+    </div>
+    <!-- /.banner -->
+
+    <footer class="footer-distributed">
+
+        <div class="footer-left">
+            <img class="img-responsive center-block" src="img/logo.png" alt="Eureka">
+        </div>
+
+        <div class="footer-center">
+
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p>116 Albany St <span>Dunedin, New Zealand</span> </p>
+            </div>
+
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>(03) 477-7977 Phone </p>
+
+            </div>
+
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="mailto:eureka116@xtra.co.nz">eureka116@xtra.co.nz</a></p>
+            </div>
+
+        </div>
+
+        <div class="footer-right">
+
+            <p class="footer-company-about">
+                <p class="footer-company-name">All rights reserved Eureka &copy; 2015</p>
+
+            </p>
+
+            <div class="footer-icons">
+
+                <a href="https://www.facebook.com/Eurekabardunedin/" target="_blank"><i class="fa fa-facebook"></i></a>
+            </div>
+
+        </div>
 
     </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 
