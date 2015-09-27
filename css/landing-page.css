@@ -274,9 +274,8 @@ p.copyright {
 }
 
 
-nav ul li {
-        color: #b79223;
-: 1;
+nav ul li a {
+    color: #b79223;
     font-family: 'BebasNeue' !important;
     margin-top: 5px;
 }
@@ -318,11 +317,6 @@ nav ul li a:hover {
     margin-top: 10px;
     
 }
-
-
-
-
-
 
 .footer-distributed{
 	background-color: #292c2f;
@@ -491,4 +485,10 @@ nav ul li a:hover {
 		margin-left: 0;
 	}
 
+}
+
+
+figure {
+    max-width: 300px;
+    margin-left: 60px;
 }

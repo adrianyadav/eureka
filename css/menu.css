@@ -298,6 +298,7 @@ p.copyright {
   opacity: .6; }
 
 nav ul li {
+      font-weight: 700;
   opacity: 1;
   font-family: 'BebasNeue' !important;
   margin-top: 5px; }
@@ -318,6 +319,7 @@ nav ul li {
   nav ul li:nth-child(4) {
     margin-left: 43px; } }
 nav ul li a {
+      font-weight: 700 !important;
   font-size: 40px;
   color: #FFF !important;
   margin: 0 auto !important; }
@@ -446,7 +448,6 @@ nav ul li a:hover {
   margin-right: 3px;
   margin-bottom: 5px; }
 
-/* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 880px) {
   .footer-distributed {
     font: bold 14px sans-serif; }
@@ -462,4 +463,9 @@ nav ul li a:hover {
   .footer-distributed .footer-center i {
     margin-left: 0; } }
 
+
+figure {
+    max-width: 300px;
+    margin-left: 60px;
+}
 /*# sourceMappingURL=menu.css.map */
