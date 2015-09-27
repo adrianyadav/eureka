@@ -15,7 +15,7 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
 }).filter('isGF', function () {
     return function (items, bool) {
         return items.filter(function (item) {
-            return item['gluten-free'] || item['some-gf'] ||  item['imp-gf']||!bool; 
+            return item['gluten-free'] || item['some-gf'] || !bool; 
         });
     };
 }).filter('removeSpaces', function () {
@@ -30,15 +30,19 @@ var app = angular.module('menuApp', []).filter('object2Array', function() {
     }
 });
 
-app.controller('menuCtrl', ['$location', '$scope', '$http', '$filter', '$window', '$timeout', function($location, $scope, $http, $filter, $window, $timeout) {
+app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, $timeout) {
     /********************************
     Here is the stuff that actually
     runs when the controller starts.
     *********************************/
-    window.myScope = $scope;
     $scope.waste  = 0;
     
-    urlUpdate = function (keys) {
+    
+  	$http.get('json/menu-items.json').then(function(res){
+        $scope.menuItems = res.data;
+        $scope.titles = Object.keys($scope.menuItems);
+        $scope.url = $location.path().substring(1);
+        var keys = Object.keys($scope.menuItems);
         var allG = false;
         
         keys.forEach(function(element) {
@@ -51,16 +55,6 @@ app.controller('menuCtrl', ['$location', '$scope', '$http', '$filter', '$window'
             $scope.url = 'main';
         }
         $scope.subMenuList = keys[$scope.url];
-    }
-    
-  	$http.get('json/menu-items.json').then(function(res){
-        $scope.menuItems = res.data;
-        $scope.titles = Object.keys($scope.menuItems);
-        $scope.url = $location.path().substring(1);
-        var keys = Object.keys($scope.menuItems);
-        
-        urlUpdate(keys);
-        
     });
        
     
@@ -84,6 +78,7 @@ app.controller('menuCtrl', ['$location', '$scope', '$http', '$filter', '$window'
     }
     
     $scope.wasteFun = function (str) {
+        console.log("memes");
         $scope.waste += 1;
         return str;
     }
@@ -99,6 +94,11 @@ app.controller('menuCtrl', ['$location', '$scope', '$http', '$filter', '$window'
         if (x['length'] == 0) {
             return true;
         }
+        //console.log(0 == x.children()['length'] || typeof x != 'undefined');
+        /*console.log(x);
+        console.log("children: " + x.children() + "   children length: " + x.children()['length']);
+        console.log(0 == x.children()['length']);
+        console.log("----------------------------------------");*/
         return 0 != x.children()['length'];
     }
     
@@ -118,9 +118,23 @@ app.controller('menuCtrl', ['$location', '$scope', '$http', '$filter', '$window'
         $scope.url = $location.path().substring(1);
         if ($scope.menuItems) {
             var keys = Object.keys($scope.menuItems);
-            urlUpdate(keys);
+            var allG = false;
+
+            keys.forEach(function(element) {
+                if (element == $scope.url) {
+                    allG = true;
+                }
+            });
+
+            if (!allG) {
+                $scope.url = 'main';
+            }
+            $scope.subMenuList = keys[$scope.url];
             $timeout($scope.wasteFun, 1);
         }
      });
-    
-}]);
+    /*
+    $scope.$on('$locationChangeStart', function(next, current) { 
+        $scope.subMenuList = keys[$scope.url];
+    });*/
+});

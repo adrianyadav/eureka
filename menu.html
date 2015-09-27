@@ -8,9 +8,14 @@
     <!-- Fonts and External Stylesheets -->
     <link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="fonts/bebasneue.css">
+<<<<<<< HEAD
 
     <link rel="stylesheet" href="eureka-bootstrap/css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+=======
+    
+	<link rel="stylesheet" type="text/css" href="css/menu.css">
+>>>>>>> parent of 79072f5... Ready to use bootstrap
     <link rel="stylesheet" href="css/base-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
@@ -103,6 +108,7 @@
                         <span class="pure-u-1-5">
                         <span ng-if="item['small-price'] "class="price" ng-bind="'$' + item['small-price'].toFixed(2)"></span>
                         <span class="price" ng-bind="'$' + item.price.toFixed(2)"></span>
+<<<<<<< HEAD
                         </span>
                         <span ng-if="item['gluten-free']">(gf)</span>
                         <span ng-if="item['some-gf']">(gf**)</span>
@@ -115,6 +121,19 @@
                         </ul>
                     </div>
                 </div>
+=======
+                    </span>
+                    <span ng-if="item['gluten-free']">(gf)</span>
+                    <span ng-if="item['some-gf']">(gf**)</span>
+                    <span ng-if="item.vegetarian">(v)</span>
+                    <span ng-if="item['some-v']">(v**)</span>      
+                    <span ng-if="item['dairy-free']">(df)</span>                  
+                    <p ng-if="isString(item.description)" ng-bind="item.description"></p>
+                    <ul ng-if="isObject(item.description)">
+                        <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>
+                    </ul>
+                </div>				
+>>>>>>> parent of 79072f5... Ready to use bootstrap
             </div>
 
             <div class="pure-u-1-1 info">

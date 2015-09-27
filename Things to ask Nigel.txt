@@ -1,14 +1,24 @@
+change snacks (all day) and combine submenus
+
+divide wines into bubbly, red, white and rose
+
 have wine description disappear at lower sizes
+
+add implied gluten free to the html
 
 make the images responsive and nice
 
+<<<<<<< HEAD
 add hide data to wine
 
 correct the outline below the menu button
 __________________________________
+=======
+filter by number of items in submenus
+>>>>>>> parent of 79072f5... Ready to use bootstrap
 
-Is the 'all day snacks' thing ok?
+change to slider in snack description to use unicode new line characters
 
-Are the arrangments of submenus fine?
+make a function for the repeated code in $scope.watch and http.get
 
-Are the size of the menus fine?
+prepare angular for minification

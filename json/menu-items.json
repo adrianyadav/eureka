@@ -1,7 +1,7 @@
 {
     "snack": {
-        "all day snacks" : {
-            "name" : "all day snacks",
+        "snacks" : {
+            "name" : "snacks",
             "content" : {
                 "fries" : {
                     "name" : "fries", 
@@ -81,24 +81,21 @@
                     "imp-v" : true,
                     "price" : 120,
                     "description" : "No1 in France, fresh, lively, and fruity",
-                    "wine-location" : "france",
-                    "imp-gf" : true
+                    "wine-location" : "france"
                 },
                 "deutz prestige cuvee" : {
                     "name" : "deutz prestige cuvee",
                     "price" : 60,
                     "description" : "perfectly balanced with hints of apple, toasted nuts, brioche, and biscuit dough",
                     "imp-v" : true,
-                    "wine-location" : "marlborough",
-                    "imp-gf" : true
+                    "wine-location" : "marlborough"
                 },
                 "deutz rose" : {
                     "name" : "deutz ros\u00C9",
                     "price" : 55,
                     "description" : "fresh and vibrant, a seductive and elegant wine with a rich cherry hue",
                     "imp-v" : true,
-                    "wine-location" : "marlborough",
-                    "imp-gf" : true
+                    "wine-location" : "marlborough"
                 },
                 "brancott estate brut cuvee" : {
                     "name" : "brancott estate brut cuvee",
@@ -106,8 +103,7 @@
                     "description" : "citrus and delicate piont noir fruit with superb vitality",
                     "imp-v" : true,
                     "wine-location" : "marlborough",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 },
                 "brancott estate sparkling sauvignon blanc" : {
                     "name" : "brancott estate sparkling sauvignon blanc",
@@ -115,8 +111,7 @@
                     "imp-v" : true,
                     "description" : "tropical fruit and passionfruit with intense stone fruit flavours",
                     "wine-location" : "marlborough",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 }
             }
         },
@@ -129,8 +124,7 @@
                     "imp-v" : true,
                     "description" : "grassy and herbaceous characteristics overlaid and softened with lifted, fresh tropical fruit flavoursand just a touch of oak",
                     "wine-location" : "hawkes's bay",
-                    "small-price" : 10,
-                    "imp-gf" : true
+                    "small-price" : 10
                 },
                 "triplebank awatere valley" : {
                     "name" :"triplebank awatere valley",
@@ -138,8 +132,7 @@
                     "imp-v" : true,
                     "description" : "displays typical tomato stalk characteristics from the awatere valley, with stone fruit and pineapple aromas, complemenets by fennel notes",                    
                     "wine-location" : "marlborough",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 },
                 "boudary rapaura road" : {
                     "name" : "boudary rapaura road",
@@ -147,8 +140,7 @@
                     "imp-v" : true,
                     "description" : "this wine has rich,ripe tropical fruit flavours and a zesty finish",
                     "wine-location" : "marlborough",
-                    "small-price" : 9,
-                    "imp-gf" : true
+                    "small-price" : 9
                 }
             }
         },
@@ -161,8 +153,7 @@
                     "imp-v" : true,
                     "description" : "A richly textured chardonnay with a delicious nuttiness on the palate",
                     "wine-location" : "hawkes's bay",
-                    "small-price" : 10,
-                    "imp-gf" : true
+                    "small-price" : 10
                 },
                 "boundary tuki tuki road" : {
                     "name" : "boundary tuki tuki road",
@@ -170,8 +161,7 @@
                     "imp-v" : true,
                     "description" : "passionfruit and pineapple aromas, a lovely and well-balanced chardonnay",
                     "wine-location" : "hawkes's bay",
-                    "small-price" : 9,
-                    "imp-gf" : true
+                    "small-price" : 9
                 }
             }
         },
@@ -184,8 +174,7 @@
                     "imp-v" : true,
                     "description" : "rich and luscious with apples strudel and honey flavours on the palate",
                     "wine-location": "waipara",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 },
                 "stoneleigh riesling" : {
                     "name" : "stoneleigh riesling",
@@ -193,8 +182,7 @@
                     "imp-v" : true,
                     "description" : "citrus and lime blosson, finishing with crisp apple acidity",
                     "wine-location": "marlborough",
-                    "small-price" : 9,
-                    "imp-gf" : true
+                    "small-price" : 9
                 }
                 
             }
@@ -208,8 +196,7 @@
                     "imp-v" : true,
                     "description" : "peaches with hint of pineapple and passionfruit with a long finish",
                     "wine-location" : "central otago",
-                    "small-price" : 10,
-                    "imp-gf" : true
+                    "small-price" : 10
                 },
                 "stoneleigh latitude pinot gris" : {
                     "name":"stoneleigh latitude pinot gris",
@@ -217,8 +204,7 @@
                     "imp-v" : true,
                     "description" : "ripe nectarine, nashi pear and honeysuckle, with a spicy floral finish",
                     "wine-location" : "marlborough",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 },
                 "boundary paper lane piont gris" : {
                     "name":"boundary paper lane piont gris",
@@ -226,8 +212,7 @@
                     "imp-v" : true,
                     "description" : "pear and stone fruits with gentle honey flavours",
                     "wine-location" : "marlborough",
-                    "small-price" : 9,
-                    "imp-gf" : true
+                    "small-price" : 9
                 }
             }
         },
@@ -240,8 +225,7 @@
                     "imp-v" : true,
                     "description" : "fresh strawberries and raspberries with a smooth, creamy texture with a crisp finish",
                     "wine-location" : "alexandra",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 }
             }
         },
@@ -253,8 +237,7 @@
                     "price" : 65,
                     "imp-v" : true,
                     "wine-location" : "alexandra",
-                    "description" : "cheeires and berry-fruits with a smokey savoury complexity and hints of local thyme",
-                    "imp-gf" : true
+                    "description" : "cheeires and berry-fruits with a smokey savoury complexity and hints of local thyme"
                 },
                 "8 ranges 'estate' pinot noir" : {
                     "name" : "8 ranges 'estate' pinot noir",
@@ -262,8 +245,7 @@
                     "imp-v" : true,
                     "wine-location" : "alexandra",
                     "description" : "spicy and savoury with bright flavours of dark cherries and boysenberries",
-                    "small-price" : 10.5,
-                    "imp-gf" : true
+                    "small-price" : 10.5
                 },
                 "the last shepherd pinot noir" : {
                     "name" : "the last shepherd pinot noir",
@@ -271,8 +253,7 @@
                     "wine-location" : "central otago",
                     "imp-v" : true,
                     "description" : "dark cherry and plum with savoury toasty overtones and a lingering finish",
-                    "small-price" : 10,
-                    "imp-gf" : true
+                    "small-price" : 10
                 },
                 "triplebank pinot noir" : {
                     "name" : "triplebank pinot noir",
@@ -280,8 +261,7 @@
                     "imp-v" : true,
                     "wine-location" : "awatere valley, marlborough",
                     "description" : "bright berry fruit characters wih dried herb, clove and cinnamon aromas",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 },
                 "8 ranges trail rider pinot noir" : {
                     "name" :  "8 ranges trail rider pinot noir",
@@ -289,8 +269,7 @@
                     "imp-v" : true,
                     "wine-location" : "alexandra",
                     "description" : "black berry-fruits with hints of the local thyme, and a slightly smokey finish",
-                    "small-price" : 9.5,
-                    "imp-gf" : true
+                    "small-price" : 9.5
                 }
             }
         },
@@ -301,36 +280,31 @@
                     "name" : "chivas regal 12yo",
                     "price" : 10,
                     "imp-v" : true,
-                    "description" : "full, rich taste of honey and ripe apples, with vanilla, hazelnut and butterscotch notes",
-                    "imp-gf" : true  
+                    "description" : "full, rich taste of honey and ripe apples, with vanilla, hazelnut and butterscotch notes"
                 },
                 "the glenlivet founder's reserve" : {
                     "name" : "the glenlivet founder's reserve",
                     "price" : 11,
                     "imp-v" : true,
-                    "description" : "sweet, fruit notes of zesty oranges and pears, with a hint of candy toffee apples and a smooth finish",
-                    "imp-gf" : true
+                    "description" : "sweet, fruit notes of zesty oranges and pears, with a hint of candy toffee apples and a smooth finish"
                 },
                 "aberlour 12yo" : {
                     "name" : "aberlour 12yo",
                     "price" : 12,
                     "imp-v" : true,
-                    "description" : "a fine sherried character, balanced with rich chocoloate, toffee, cinnamon, and ginger spiciness",
-                    "imp-gf" : true
+                    "description" : "a fine sherried character, balanced with rich chocoloate, toffee, cinnamon, and ginger spiciness"
                 },
                 "strathisla 12yo" : {
                     "name" : "strathisla 12yo",
                     "price" : 14.5,
                     "imp-v" : true,
-                    "description" : "notes of sultanas and cinnamon pastries, allspice, cooked apple and mince pies",
-                    "imp-gf" : true
+                    "description" : "notes of sultanas and cinnamon pastries, allspice, cooked apple and mince pies"
                 },
                 "the glenlivet 15yo french oak" : {
                     "name" : "the glenlivet 15yo french oak",
                     "price" : 19.5,
                     "imp-v" : true,
-                    "description" : "intense and sweet with hints of citrus truit, notes of ripte mango, cinnamon and white pepper, with a long, creamy finish",
-                    "imp-gf" : true
+                    "description" : "intense and sweet with hints of citrus truit, notes of ripte mango, cinnamon and white pepper, with a long, creamy finish"
                 }
             }
         },
@@ -342,8 +316,7 @@
                     "price" : 48,
                     "small-price" : 10,
                     "imp-v" : true,
-                    "description" : "generous, full palate with an enticing mix of sweet red fruits and dark chocoloate",
-                    "imp-gf" : true
+                    "description" : "generous, full palate with an enticing mix of sweet red fruits and dark chocoloate"
                 },
                 "george wyndham founders reserve shiraz" : {
                     "name" : "george wyndham founders reserve shiraz",
@@ -351,8 +324,7 @@
                     "small-price" : 9.5,
                     "imp-v" : true,
                     "wine-location" : "australia",
-                    "description" : "crammed with ripe plum, black cherry and mint, yet above all, profoundly soft",
-                    "imp-gf" : true
+                    "description" : "crammed with ripe plum, black cherry and mint, yet above all, profoundly soft"
                 },
                 "boundary vineyards farm rd syrah" : {
                     "name" : "boundary vineyards farm rd syrah",
@@ -360,8 +332,7 @@
                     "small-price" : 9,
                     "wine-location" : "hawke's bay",
                     "imp-v" : true,
-                    "description" : "berry fruit and plum is complemented spice aromas",
-                    "imp-gf" : true
+                    "description" : "berry fruit and plum is complemented spice aromas"
                     
                 }
             }
@@ -374,8 +345,7 @@
                     "price" : 48,
                     "small-price" : 10,
                     "imp-v" : true,
-                    "description" : "cassis aromas with mint, dark olive and caramel notes. with sweet and toasty finish",
-                    "imp-gf" : true
+                    "description" : "cassis aromas with mint, dark olive and caramel notes. with sweet and toasty finish"
                 },
                 "church road macdonald series merlot" : {
                     "name" : "church road macdonald series merlot",
@@ -383,8 +353,7 @@
                     "small-price" : 10,
                     "imp-v" : true,
                     "wine-location" : "hawke's bay",
-                    "description" : "rich, dark berry and plym fruits, fragrant violet notes and a touch of spice",
-                    "imp-gf" : true
+                    "description" : "rich, dark berry and plym fruits, fragrant violet notes and a touch of spice"
                 },
                 "stoneleigh merlot" : {
                     "name" : "stoneleigh merlot",
@@ -392,8 +361,7 @@
                     "small-price" : 9,
                     "imp-v" : true,
                     "wine-location" : "marlborough",
-                    "description" : "ripe blackberry fruit and mocha flavours, with a lingering berry fruit finish",
-                    "imp-gf" : true
+                    "description" : "ripe blackberry fruit and mocha flavours, with a lingering berry fruit finish"
                 }
             }
         }       
