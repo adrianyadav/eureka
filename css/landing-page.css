@@ -275,7 +275,8 @@ p.copyright {
 
 
 nav ul li {
-    opacity: 1;
+        color: #b79223;
+: 1;
     font-family: 'BebasNeue' !important;
     margin-top: 5px;
 }
@@ -290,9 +291,9 @@ nav ul li {
     }
 }
 
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 400px) {
     nav ul{
-                margin-left: -40px !important;
+         margin-left: -40px !important;
     }
     nav ul li a {
         text-align: center;
@@ -310,7 +311,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #F3F315!important;
+    color: #b79223 !important;
 }
 
 .logo  {
