@@ -3,6 +3,8 @@ have wine description disappear at lower sizes
 make the images responsive and nice
 
 add hide data to wine
+
+correct the outline below the menu button
 __________________________________
 
 Is the 'all day snacks' thing ok?

@@ -91,6 +91,10 @@ body {
 #menu_button {
     font-family: 'BebasNeue' !important;
 	background-color: #FFF;
+    height: 100%;
+    p {
+        margin: 0;
+    }
 }
 
 #menu_type_button {
@@ -106,6 +110,12 @@ body {
         font-size: 40px;
         
         color: #FFF !important;
+    }
+    
+    .btn p {
+        display: inline;
+        margin: 0 !important;
+        width: 100%;
     }
     
     p {
@@ -143,7 +153,7 @@ body {
 Menu Type Dropdown Stuff
 ***********************/
 
-li {list-style-type: none;}
+li {list-style-type: none !important;}
 
 /*************
 HEADER
@@ -235,13 +245,13 @@ nav ul li {
 nav ul li a {
     font-size: 40px;
 	color: #FFF;
-	text-decoration: none;
 	z-index: 2;
 	transition: color 0.15s ease;
 }
 
 nav ul li a:hover {
 	color: #b79223;
+    text-decoration: none;
 }
 
 /*********************
