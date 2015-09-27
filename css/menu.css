@@ -11,22 +11,10 @@ body {
   height: 70vh;
   position: relative; }
 
-.slide {
-  height: 100%;
-  overflow: hidden;
-  display: none;
-  position: absolute;
-  z-index: -2; }
-
-.slide img {
-  min-height: 100%;
-  width: 100%;
-  height: auto;
-  background-size: cover; }
-
 #slides {
   display: block;
-  background-size: cover; }
+  background-size: cover;
+  background-attachment: fixed; }
 
 @media (min-width: 2700px) {
   .slide img {
