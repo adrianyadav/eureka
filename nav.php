@@ -26,7 +26,7 @@
                         <a href="menu.php#wine">WINE</a>
                     </li>
                     <li>
-                        <a href="#beer">BEER</a>
+                        <a href="index.php#beer">BEER</a>
                     </li>
                     <li>
                         <a href="index.php#contact">CONTACT</a>

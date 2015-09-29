@@ -161,7 +161,7 @@
                 <div class="col-lg-12">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Latest Beers</h2>
-                    <ul class="center-test" id="beers">
+                    <ul id="beer" class="center-test" id="beers">
                         <?php include 'beers.php';?>
                         <button type="button" id="showlist" class="btn btn-default mr center-block">Show full list</button>
 
@@ -202,7 +202,7 @@
 
     <div class="container center-form" id="contact">
         <div class="row">
-            <form action="test.php" method="post">
+        <form action="https://getsimpleform.com/messages?form_api_token=86825f5a963db56bd811ea8543d3da3d" method="post">
                 <div class="col-lg-12">
                     <h2> Send us  a message </h2>
                     <div class="form-group">
@@ -224,7 +224,7 @@
                             <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
                     </div>
                     <div class="form-group">
-                        <label for="InputReal">What is four + three? (Ensures your not a robot)</label>
+                        <label for="InputReal">What is four + three? (Ensures you're not a robot)</label>
                         <div class="input-group">
                             <input type="text" class="form-control" name="InputReal" id="InputReal" required pattern=[7]>
                             <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span></div>
