@@ -16,7 +16,10 @@
     <link rel="stylesheet" href="css/base-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
-        <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link href="css/nav-footer.css" rel="stylesheet">
+
+
 </head>
 
 <body ng-app="menuApp" ng-controller="menuCtrl">

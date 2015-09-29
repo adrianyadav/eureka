@@ -24,6 +24,8 @@
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
+    <link href="css/nav-footer.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -46,7 +48,6 @@
 <body>
 
     <?php include 'nav.php';?>
-
 
     <!-- Header -->
     <div class="intro-header">
@@ -160,25 +161,15 @@
                 <div class="col-lg-12">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Latest Beers</h2>
-                    <ul class="center-test">
-                        <li> September 24 - Three Boys Wheat now available </li>
-                        <li> September 24 - Moa South Pacific I.P.A now available </li>
-                        <li> September 24 - Scotts Brewery Pinot Porter now </li>
-                        <li> September 22 - Golden Eagle Red I.P.A now available </li>
-                        <li> September 20 - Golden Eagle Marilyn now available </li>
-                        <li class="hidden"> September 20 - Tuatara American Pale Ale now available </li>
-                        <li class="hidden"> September 17 - Renaissance Paradox Pilsner now available </li>
-                        <li class="hidden"> September 17 - 8 Wired Flat White (Nitro) now available </li>
-                        <li class="hidden"> September 14 - Tuatara Iti now available </li>
-                        <li class="hidden"> September 14 - Three Boys I.P.A now available </li>
-                        <li class="hidden"> September 10 - Renaissance Elemental Porter now </li>
-
+                    <ul class="center-test" id="beers">
+                        <?php include 'beers.php';?>
                         <button type="button" id="showlist" class="btn btn-default mr center-block">Show full list</button>
 
                         <script>
                             $(document).ready(function () {
                                 $("#showlist").click(function () {
                                     $('li').removeClass('hidden');
+                                    $('section-heading').removeClass('hidden');
                                 });
 
                                
@@ -255,6 +246,6 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 
-</body>
+</body>   
 
 </html>
