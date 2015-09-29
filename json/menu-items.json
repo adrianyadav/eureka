@@ -109,7 +109,7 @@
                 "brancott estate brut cuvee" : {
                     "name" : "brancott estate brut cuvee",
                     "price" : 36,
-                    "description" : "citrus and delicate piont noir fruit with superb vitality",
+                    "description" : "citrus and delicate pinot noir fruit with superb vitality",
                     "imp-v" : true,
                     "wine-location" : "marlborough",
                     "small-price" : 9.5,
@@ -147,8 +147,8 @@
                     "small-price" : 9.5,
                     "imp-gf" : true
                 },
-                "boudary rapaura road" : {
-                    "name" : "boudary rapaura road",
+                "boundary rapaura road" : {
+                    "name" : "boundary rapaura road",
                     "price" : 43,
                     "imp-v" : true,
                     "description" : "this wine has rich,ripe tropical fruit flavours and a zesty finish",
