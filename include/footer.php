@@ -1,10 +1,9 @@
  <footer class="footer-distributed">
 
         <div class="footer-left">
-                         <a href="index.php">
-            <img class="img-responsive center-block" src="img/logo.png" alt="Eureka"> </a>
+                         <a href="./sindex.php">
+            <img class="img-responsive center-block" src="./img/logo.png" alt="Eureka"> </a>
         </div>
-
         <div class="footer-center">
 
             <div>

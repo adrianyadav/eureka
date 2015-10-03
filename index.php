@@ -20,7 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
    <!-- Favicon -->
-    <link rel="icon" type="image/png"  href="img/favicon.png">
+    <link rel="icon" type="image/png"  href="./img/favicon.png">
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 
 <body>
 
-    <?php include 'nav.php';?>
+    <?php include 'include/nav.php';?>
 
     <!-- Header -->
     <div class="intro-header">
@@ -154,7 +154,6 @@
 
     </div>
 
-    <div class="content-section-c center">
 
         <div class="container">
             <div class="row">
@@ -182,7 +181,6 @@
             </div>
 
         </div>
-    </div>
 
     <div class="banner2">
 
@@ -239,7 +237,7 @@
     </div>
     <!-- /.banner -->
 
-   <?php include 'footer.php';?>
+   <?php include 'include/footer.php';?>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
