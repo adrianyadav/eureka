@@ -1,5 +1,13 @@
 p {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  font-size: 1.2em;
+  color: black; }
+
+h1 {
+  color: black; }
+
+span {
+  color: black; }
 
 body {
   margin: 0; }
@@ -11,28 +19,29 @@ body {
   height: 70vh;
   position: relative; }
 
-#slides {
-  display: block;
-  background-size: cover;
-  background-attachment: fixed; }
-
 @media (min-width: 2700px) {
   .slide img {
     width: 100%; } }
-/*@media (max-width: 1200px) {
-    .slide img {
-        overflow-x: hidden;
-    }
-}
-
-@media (max-width: 710px) {
-	.slide img {
-		height: 100%;
-		min-width: 100%;
-	}
-}*/
-#slides {
+.slide {
+  display: block;
+  background-size: cover;
+  background-attachment: fixed;
   height: 100%; }
+
+/*
+=====================
+Slide animations
+=====================
+*/
+.slide.ng-enter {
+  -webkit-transition: 0.5s linear all;
+  -moz-transition: 0.5s linear all;
+  -o-transition: 0.5s linear all;
+  transition: 0.5s linear all;
+  opacity: 0; }
+
+.slide.ng-enter.ng-enter-active {
+  opacity: 1; }
 
 /*************************************
   BUTTON STUFF
@@ -47,7 +56,9 @@ body {
   width: 30%;
   margin: 0 auto;
   height: 80px !important;
-  border: 1px solid black; }
+  border: 1px solid black;
+  z-index: 1;
+  position: relative; }
 
 .inline {
   float: left;
@@ -70,6 +81,9 @@ body {
 @media (max-width: 1150px) {
   #inner_button_container {
     width: 350px; } }
+@media (max-width: 373px) {
+  #inner_button_container {
+    width: 100%; } }
 #menu_button {
   font-family: 'BebasNeue' !important;
   background-color: #FFF;
@@ -275,3 +289,191 @@ MENU
 
 .extraInfo {
   font-size: 30px; }
+
+/*************************************
+ALL OF ADRIAN'S SHIT
+*************************************/
+body,
+html {
+  width: 100%;
+  height: 100%; }
+
+footer {
+  padding: 50px 0;
+  background-color: #f8f8f8; }
+
+p.copyright {
+  margin: 15px 0 0; }
+
+.header {
+  width: 100%;
+  min-height: 120px;
+  background-color: #000;
+  opacity: .6; }
+
+nav ul li {
+  opacity: 1;
+  font-family: 'BebasNeue' !important;
+  margin-top: 5px; }
+
+.nav {
+  padding-top: 30px; }
+
+@media only screen and (max-width: 1000px) {
+  nav ul li a {
+    text-align: center; } }
+@media only screen and (max-width: 400px) {
+  nav ul {
+    margin-left: -40px !important; }
+
+  nav ul li a {
+    text-align: center; }
+
+  nav ul li:nth-child(4) {
+    margin-left: 43px; } }
+nav ul li a {
+  font-size: 40px;
+  color: #FFF !important;
+  margin: 0 auto !important; }
+
+nav ul li a:hover {
+  color: #b79223 !important; }
+
+.logo {
+  margin-top: 10px; }
+
+.footer-distributed {
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+  padding: 55px 50px;
+  margin-top: 80px; }
+
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right {
+  display: inline-block;
+  vertical-align: top; }
+
+/* Footer left */
+.footer-distributed .footer-left {
+  width: 40%; }
+
+/* The company logo */
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0; }
+
+.footer-distributed h3 span {
+  color: #5383d3; }
+
+/* Footer links */
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0; }
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit; }
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 1em;
+  font-weight: normal;
+  margin: 0; }
+
+/* Footer Center */
+.footer-distributed .footer-center {
+  width: 35%; }
+
+.footer-distributed .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle; }
+
+.footer-distributed .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px; }
+
+.footer-distributed .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0; }
+
+.footer-distributed .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2; }
+
+.footer-distributed .footer-center p a {
+  color: #5383d3;
+  text-decoration: none; }
+
+/* Footer Right */
+.footer-distributed .footer-right {
+  width: 20%; }
+
+.footer-distributed .footer-company-about {
+  line-height: 20px;
+  color: #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0; }
+
+.footer-distributed .footer-company-about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px; }
+
+.footer-distributed .footer-icons {
+  margin-top: 25px; }
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px; }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+@media (max-width: 880px) {
+  .footer-distributed {
+    font: bold 14px sans-serif; }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center; }
+
+  .footer-distributed .footer-center i {
+    margin-left: 0; } }
+
+/*# sourceMappingURL=menu.css.map */

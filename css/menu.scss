@@ -1,6 +1,16 @@
 $my-gold: #b79223;
 p {
     margin-bottom: 0;
+    font-size: 1.2em;
+    color: black;
+}
+
+h1 {
+    color: black;
+}
+
+span {
+    color: black;
 }
 
 body {
@@ -15,39 +25,36 @@ body {
 	position: relative;
 }
 
-
-
-#slides {
-	display: block;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-
 @media (min-width: 2700px) {
     .slide img {
         width: 100%;
     }
 }
-/*@media (max-width: 1200px) {
-    .slide img {
-        overflow-x: hidden;
-    }
+
+.slide {
+	display: block;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
 }
 
-@media (max-width: 710px) {
-	.slide img {
-		height: 100%;
-		min-width: 100%;
-	}
-}*/
+/*
+=====================
+Slide animations
+=====================
+*/
 
-
-#slides {
-	height: 100%;
+.slide.ng-enter {
+  -webkit-transition:0.5s linear all;
+  -moz-transition:0.5s linear all;
+  -o-transition:0.5s linear all;
+  transition:0.5s linear all;
+  opacity:0;
 }
 
-
+.slide.ng-enter.ng-enter-active {
+  opacity:1;
+}
 /*************************************
   BUTTON STUFF
   ************************************/
@@ -63,6 +70,8 @@ body {
     margin: 0 auto;
     height: 80px !important;
     border: 1px solid black;
+    z-index: 1;
+    position: relative;
 }
 
 .inline {
@@ -88,6 +97,11 @@ body {
 @media (max-width: 1150px) {
 	#inner_button_container {
 		width: 350px;
+	}
+}
+@media (max-width: 373px) {
+	#inner_button_container {
+		width: 100%;
 	}
 }
 
@@ -468,7 +482,7 @@ nav ul li a:hover {
 
 .footer-distributed .footer-company-name{
 	color:  #8f9296;
-	font-size: 14px;
+	font-size: 1em;
 	font-weight: normal;
 	margin: 0;
 }

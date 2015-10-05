@@ -25,7 +25,6 @@
 <body ng-app="menuApp" ng-controller="menuCtrl">
     <?php include 'nav.php';?>
 
-
     <!-- Start of Main -->
     <main>
         <!-- Slides Container -->
@@ -33,26 +32,24 @@
 
         <div id="slider_container">
             <div id="outer_button_container">
-            <div id="inner_button_container">
-                <div class="pure-menu-item pure-menu-has-children pure-menu-allow-hover menu_type_button inline" id="menu_type_button">
-                    <p id="menuLink1" class="pure-menu-link" ng-bind="capital(url)"></p>
-                    <ul class="pure-menu-children">
-                        <li class="pure-menu-item" ng-repeat="title in titles" >
-                            <div>
-                                <a href="#{{title}}" class="pure-menu-link" ng-bind="capital(title)"style="z-index: 5;"></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                                
-                <div id="menu_button" class="inline">
-                    <p class="button_tag">Menu</p>
+                <div id="inner_button_container">
+                    <div class="pure-menu-item pure-menu-has-children pure-menu-allow-hover menu_type_button inline" id="menu_type_button">
+                        <p id="menuLink1" class="pure-menu-link" ng-bind="capital(url)"></p>
+                        <ul class="pure-menu-children">
+                            <li class="pure-menu-item" ng-repeat="title in titles" >
+                                <div>
+                                    <a href="#{{title}}" class="pure-menu-link" ng-bind="capital(title)"style="z-index: 5;"></a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div id="menu_button" class="inline">
+                        <p class="button_tag">Menu</p>
+                    </div>
                 </div>
             </div>
-        </div>
-            <div id="slides" u="slides" ng-style="{'background-image': 'url(img/menu/' + url + '.jpg'}">
-                
-            </div>
+                <div ng-repeat="title in titles" class="slide" ng-show="title === url" ng-style="{'background-image': 'url(img/menu/' + title + '.jpg'}"></div>
         </div>
 
         <!--Menu Area -->
@@ -67,7 +64,7 @@
                 <input type="checkbox" ng-model="glute" ng-change="wasteFun()">
             </div>
 
-            <div ng-repeat="subMenu in menuItems[url]" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
+            <div ng-repeat="subMenu in removeHide(menuItems[url])" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
                 <h1 ng-bind="subMenu.name"></h1>
                 <span ng-bind="subMenu.extra" class="extraInfo"></span>
                 <hr>
@@ -115,8 +112,9 @@
     </main>
        <?php include 'footer.php';?>
 
-
-    <script src="js/jquery-1.11.3.min.js"></script> <script src="js/angular.js"></script>
+    <script src="js/jquery-1.11.3.min.js"></script> 
+    <script src="js/angular.js"></script>
+    <script src="js/angular-animate.js"></script>
     <script type="text/javascript" src="js/controllers.js"></script>
     <script src="js/dropdown.js"></script>
     <script src="js/bootstrap.min.js"></script>

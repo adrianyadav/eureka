@@ -95,7 +95,7 @@
     <!-- /.container -->
 
 
-    <div class="banner3">
+    <div class="banner" id="banner3">
 
         <div class="container">
 
@@ -140,7 +140,7 @@
 
 
 
-    <div class="banner4">
+    <div class="banner" id="banner4">
 
         <div class="container">
 
@@ -184,7 +184,7 @@
         </div>
     </div>
 
-    <div class="banner2">
+    <div class="banner" id="banner2">
 
         <div class="container">
 

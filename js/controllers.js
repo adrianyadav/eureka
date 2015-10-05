@@ -1,4 +1,4 @@
-var app = angular.module('menuApp', []).filter('object2Array', function() {
+var app = angular.module('menuApp', ['ngAnimate']).filter('object2Array', function() {
     return function(input) {
         var out = []; 
         for(i in input){
@@ -65,6 +65,12 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
     From Here I'm just definiing functions 
     that will e used in the view.
     ************************************/
+    $scope.removeHide = function (obj) {
+        if (!obj) return null;
+        delete obj.hide;
+        return obj;
+    }
+    
     $scope.correctHash = function (str) {
         return str.substring(1);
     }
@@ -81,7 +87,6 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
     }
     
     $scope.wasteFun = function (str) {
-        console.log("memes");
         $scope.waste += 1;
         return str;
     }
