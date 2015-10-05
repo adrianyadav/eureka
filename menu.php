@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="fonts/bebasneue.css">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" type="text/css" href="css/menu.css">
     <link rel="stylesheet" href="css/base-min.css">
     <link rel="stylesheet" href="css/pure-min.css">
     <link rel="stylesheet" href="css/grids-responsive-min.css">
@@ -23,7 +22,7 @@
 </head>
 
 <body ng-app="menuApp" ng-controller="menuCtrl">
-    <?php include 'nav.php';?>
+    <?php include 'include/nav.php';?>
 
     <!-- Start of Main -->
     <main>
@@ -110,7 +109,7 @@
         </section>
         
     </main>
-       <?php include 'footer.php';?>
+       <?php include 'include/footer.php';?>
 
     <script src="js/jquery-1.11.3.min.js"></script> 
     <script src="js/angular.js"></script>
