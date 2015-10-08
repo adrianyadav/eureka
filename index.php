@@ -30,8 +30,9 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <script src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    
 
 
 
@@ -92,54 +93,8 @@
 
         </div>
     </div>
-    <!-- /.container -->
-
-
-    <div class="banner" id="banner3">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-6">
-                </div>
-            </div>
-
-        </div>
-        <!-- /.container -->
-
-    </div>
-    <!-- /.content-section-a -->
-    <div class="content-section-b">
-    </div>
-
-<!--
-    <div class="content-section-b">
-
-        <div class="container">
-
-            <div class="row">
-                <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading"> Beers </h2>
-                    <p class="lead">Beer information</p>
-                </div>
-                <div class="col-lg-5 col-lg-offset-1  col-sm-pull-6  col-sm-6">
-                    <hr class="section-heading-spacer">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Guest Beers</h2>
-                    <img src="img/moa.png" class="img-responsive">
-                </div>
-            </div>
-
-        </div>
-        
-    </div>
--->
-
-
-
-
+    <!-- /.container -->    
+    
     <div class="banner" id="banner4">
 
         <div class="container">
@@ -155,32 +110,14 @@
     </div>
 
 
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="clearfix"></div>
-                    <h2 class="section-heading">Latest Beers</h2>
-                    <ul id="beer" class="center-test" id="beers">
-                        <?php include 'beers.php';?>
-                        <button type="button" id="showlist" class="btn btn-default mr center-block">Show full list</button>
-
-                        <script>
-                            $(document).ready(function () {
-                                $("#showlist").click(function () {
-                                    $('li').removeClass('hidden');
-                                    $('section-heading').removeClass('hidden');
-                                });
-
-                               
-
-                            });
-                        </script>
-
-                    </ul>
-                </div>
+    <div class="container" id="beer">
+        <div class="row">
+            <div class="col-lg-12">                
+                <?php include 'beers.php';?>                             
             </div>
-
         </div>
+
+    </div>
 
     <div class="banner" id="banner2">
 
@@ -239,8 +176,9 @@
 
    <?php include 'include/footer.php';?>
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="js/homepage.js"></script>
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
 

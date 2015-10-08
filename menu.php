@@ -48,7 +48,7 @@
                     </div>
                 </div>
             </div>
-                <div ng-repeat="title in titles" class="slide" ng-show="title === url" ng-style="{'background-image': 'url(img/menu/' + title + '.jpg'}"></div>
+            <div ng-repeat="title in titles" class="slide" ng-show="title === url" ng-style="{'background-image': 'url(img/menu/' + title + '.jpg'}"></div>
         </div>
 
         <!--Menu Area -->
@@ -56,11 +56,11 @@
                 
             <div class="search">
                 <p>Search:</p>
-                <input type="text" ng-model="search" ng-change="wasteFun()">
+                <input type="text" ng-model="search" ng-change="wasteFuns()">
                 <p>vegetarian:</p>
-                <input type="checkbox" ng-model="vege" ng-change="wasteFun()">
+                <input type="checkbox" ng-model="vege" ng-change="wasteFuns()">
                 <p>gluten free:</p>
-                <input type="checkbox" ng-model="glute" ng-change="wasteFun()">
+                <input type="checkbox" ng-model="glute" ng-change="wasteFuns()">
             </div>
 
             <div ng-repeat="subMenu in removeHide(menuItems[url])" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
