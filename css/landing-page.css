@@ -162,9 +162,8 @@ hr {
   padding: 100px 0;
   color: #f8f8f8;
   background-size: cover;
-  background-attachment: fixed;
   max-width: auto;
-  height: 200px;
+  height: 300px;
   width: 100%; }
 
 #banner3 {
@@ -173,7 +172,8 @@ hr {
   color: #f8f8f8;
   background-size: cover;
   background-attachment: fixed;
-  height: 400px; }
+  height: auto;
+}
 
 #banner4 {
   background: url(../img/bigears.JPG) no-repeat center center;
@@ -235,3 +235,16 @@ button.slick-arrow::before {
     width: 100%; } }
 
 /*# sourceMappingURL=landing-page.css.map */
+
+/*
+=================
+Admin
+=================
+*/
+
+.admin {
+  width: 500px;
+}
+form {
+  margin-bottom: 50px;
+}
