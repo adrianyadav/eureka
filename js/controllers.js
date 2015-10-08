@@ -91,6 +91,10 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
         return str;
     }
     
+    $scope.wasteFuns = function () {
+        $timeout($scope.wasteFun, 1);
+    }
+    
     $scope.white = function (str) {
         return str.replace(/\s/g, '');
     }
@@ -105,7 +109,7 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
     }
     
     $scope.capital = function (input) {
-        if (typeof input == 'undefined') {return ""}
+        if (typeof (input) === 'undefined' || input == "") {return ""}
         return input[0].toUpperCase() + input.substring(1);
     }
     

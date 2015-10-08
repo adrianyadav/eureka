@@ -18,6 +18,11 @@ h6 {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700; }
 
+hr {
+  background-color: #333;
+  border-color: #333;
+  color: #333; }
+
 /**
 ========================
 = Intro
@@ -144,7 +149,8 @@ h6 {
   text-align: left; }
 
 .mr {
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 /**
 ========================
@@ -206,5 +212,26 @@ h6 {
 
   ul.banner-social-buttons > li:last-child {
     margin-bottom: 0; } }
+/*
+=================
+Beer Section
+=================
+*/
+.guestbeer {
+  margin-bottom: 0; }
+
+.housepour {
+  text-align: center; }
+
+button.slick-arrow::before {
+  color: #333; }
+
+@media (max-width: 749px) {
+  .guestBeerContainer {
+    margin: 0 auto;
+    width: 400px; } }
+@media (max-width: 500px) {
+  .guestBeerContainer {
+    width: 100%; } }
 
 /*# sourceMappingURL=landing-page.css.map */

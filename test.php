@@ -46,7 +46,7 @@ session_start();
 </head>
 
 <body>
-<?php include 'include/nav.php';?>
+
 <div class="container center-block">
 <form method="post" class="form-inline" action="script.php">
     <fieldset>
@@ -79,7 +79,7 @@ session_start();
     }
     ?>
 </ul>
-<?php include 'include/footer.php';?>
+
 
 </body>
 </html>
