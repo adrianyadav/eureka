@@ -113,7 +113,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">                
-                    <?php include 'beers.php';?>                             
+                    <?php include 'include/beers.php';?>
                 </div>
             </div>
 

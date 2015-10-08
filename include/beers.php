@@ -1,13 +1,20 @@
 <h1 class="section-heading">Beer</h1>
-<hr></hr>
+<hr>
 <div class='col-sm-6'>
     <h3 class="section-heading">House Pours</h3>
     <div class="housePourContainer">
 
 <?php
 $xml = simplexml_load_file("./xml/drinks.xml");
-$totalGuestBeers = 10;
-$visibleGuestBeers = 5;
+
+
+
+$beers = $xml->xpath('//beer');
+$totalGuestBeers = 0;
+foreach ($beers as $beer) {
+    $totalGuestBeers++;
+}
+$visibleGuestBeers = ($totalGuestBeers/2)+1;
 $x = 0;
 $hiddenClass = '';
 foreach ($xml->housepours->housepour as $housepour){
