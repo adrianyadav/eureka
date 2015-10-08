@@ -44,13 +44,14 @@ if ($_SESSION["login"] != "true"){
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
     <script src="js/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
     <![endif]-->
 </head>
 
@@ -74,7 +75,7 @@ if ($_SESSION["login"] != "true"){
 
     <form method="post" class="pure-form" action="php/script.php">
         <fieldset>
-            <legend> Existing Beers</legend>
+            <legend> Beers</legend>
             <?php
             $x = 0;
             $i = 0;
@@ -105,7 +106,7 @@ if ($_SESSION["login"] != "true"){
             }
 
             ?>
-            <button type="submit" class="pure-button">Update</button>
+            <button type="submit" class="pure-button btn">Update</button>
         </fieldset>
 
     </form>
@@ -115,7 +116,7 @@ if ($_SESSION["login"] != "true"){
             <label>
                 <input type='text' value='<?php echo "Enter beer here"?>' name='beer<?php echo $x++ ?>'>
             </label>
-            <button type="submit" class="pure-button">Add new beer</button>
+            <button type="submit" class="pure-button btn">Add new beer</button>
 
         </fieldset>
 
@@ -129,7 +130,7 @@ if ($_SESSION["login"] != "true"){
             <label>
                 <input type='text' value='<?php echo "Enter housepour here"?>' name='housepour<?php echo $i++ ?>'>
             </label>
-            <button type="submit" class="pure-button">Add new housepour</button>
+            <button type="submit" class="pure-button btn">Add new housepour</button>
         </fieldset>
 
     </form>

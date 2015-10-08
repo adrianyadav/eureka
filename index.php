@@ -108,14 +108,7 @@
         <!-- /.container -->
 
     </div>
-    <div class="container" id="beer">
-        <div class="row">
-            <div class="col-lg-12">                
-                <?php include 'beers.php';?>                             
-            </div>
-        </div>
 
-    </div>
 
         <div class="container">
             <div class="row">
