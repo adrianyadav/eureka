@@ -7,7 +7,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach ($housepours as $housepour) {
         $i++;
     }
-    print($i);
     $newHousepour = $drinks->housepours->addChild('housepour', $_POST["housepour$i"]);
     $drinks->saveXML('../xml/drinks.xml');
     header('Location: ../admin.php');

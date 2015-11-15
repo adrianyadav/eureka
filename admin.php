@@ -114,7 +114,7 @@ if ($_SESSION["login"] != "true"){
         <fieldset>
             <legend> Add beer</legend>
             <label>
-                <input type='text' value='<?php echo "Enter beer here"?>' name='beer<?php echo $x++ ?>'>
+                <input type='text' placeholder='<?php echo "Enter beer here"?>' name='beer<?php echo $x++ ?>'>
             </label>
             <button type="submit" class="pure-button btn">Add new beer</button>
 
@@ -128,7 +128,7 @@ if ($_SESSION["login"] != "true"){
             <legend> Add housepour</legend>
 
             <label>
-                <input type='text' value='<?php echo "Enter housepour here"?>' name='housepour<?php echo $i++ ?>'>
+                <input type='text' placeholder='<?php echo "Enter housepour here"?>' name='housepour<?php echo $i++ ?>'>
             </label>
             <button type="submit" class="pure-button btn">Add new housepour</button>
         </fieldset>
