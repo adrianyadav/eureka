@@ -1,0 +1,674 @@
+{
+    "snack": {
+        "snacks" : {
+            "extra" : ". . .all day",
+            "name" : "snacks",
+            "content" : {
+                "fries" : {
+                    "name" : "fries", 
+                    "gluten-free": true, 
+                    "vegetarian" : false, 
+                    "price" : 7.5, 
+                    "description": "with aioli and tomato sauce",
+                    "imp-v" : true
+                },
+                "curry fries" : {
+                    "name" : "curry fries", 
+                    "gluten-free": true, 
+                    "vegetarian" : false, 
+                    "price" : 9.5, 
+                    "description": "topped with our tangy tomato curry sauce",
+                    "imp-v" : true
+                },
+                "seasoned wedges" : {
+                    "name" : "seasoned wedges", 
+                    "gluten-free": false, 
+                    "vegetarian" : false, 
+                    "price" : 9.5, 
+                    "description": "with sour cream and salsa"            
+                },
+                "pork skewers" : {
+                    "name" : "pork skewers", 
+                    "gluten-free": true, 
+                    "vegetarian" : false, 
+                    "price" : 9.5, 
+                    "description": "slow cooked belly tossed in bbq sauce"            
+                },
+                "eureka cheese rolls" : {
+                    "name" : "eureka cheese rolls", 
+                    "gluten-free": false, 
+                    "vegetarian" : false, 
+                    "price" : 13, 
+                    "description": "with a tomato relish",
+                    "imp-v" : true
+                },
+                "sliders" : {
+                    "name" : "sliders", 
+                    "gluten-free": false, 
+                    "vegetarian" : false, 
+                    "price" : 13.5, 
+                    "some-v" : true,
+                    "description": {
+                        "1" : "pulled pork, apple slaw",
+                        "2" : "cod goujons, lettuce, tomato, and house made tartare",
+                        "3" : "beetroot, haloumi and chili jam (v)"
+                    }
+                },
+                "hot platter" : {
+                    "name" : "hot platter", 
+                    "price" : 13.5, 
+                    "description": "fish bites, squid rings, spring rolls, wedges with sweet chilli and sour cream"
+                },
+                "nachos" : {
+                    "name" : "nachos", 
+                    "gluten-free": true, 
+                    "some-v" : true,
+                    "price" : 18.5, 
+                    "description": "chicken, beef or vegetarian with melted cheese, salsa and sour cream"            
+                },
+                "anti-pasto platter" : {
+                    "name" : "anti-pasto platter", 
+                    "some-gf" : true,
+                    "some-v" : true,
+                    "price" : 28, 
+                    "description": "cheeses, cured meats, pickles and toasted ciabatta"            
+                }
+            }
+        }
+    },
+    "wine" : {
+        "hide" : true,
+        "champagne and methode traditionelle" : {
+            "name" : "champagne and methode traditionelle",
+            "content" : {
+                "Mumm Cordon Rouge NV" : {
+                    "name" : "Mumm Cordon Rouge NV",
+                    "imp-v" : true,
+                    "price" : 120,
+                    "description" : "No1 in France, fresh, lively, and fruity",
+                    "wine-location" : "france",
+                    "imp-gf" : true
+                    
+                },
+                "deutz prestige cuvee" : {
+                    "name" : "deutz prestige cuvee",
+                    "price" : 60,
+                    "description" : "perfectly balanced with hints of apple, toasted nuts, brioche, and biscuit dough",
+                    "imp-v" : true,
+                    "wine-location" : "marlborough",
+                    "imp-gf" : true
+                },
+                "deutz rose" : {
+                    "name" : "deutz ros\u00C9",
+                    "price" : 55,
+                    "description" : "fresh and vibrant, a seductive and elegant wine with a rich cherry hue",
+                    "imp-v" : true,
+                    "wine-location" : "marlborough",
+                    "imp-gf" : true
+                },
+                "brancott estate brut cuvee" : {
+                    "name" : "brancott estate brut cuvee",
+                    "price" : 36,
+                    "description" : "citrus and delicate pinot noir fruit with superb vitality",
+                    "imp-v" : true,
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                },
+                "brancott estate sparkling sauvignon blanc" : {
+                    "name" : "brancott estate sparkling sauvignon blanc",
+                    "price" : 36,
+                    "imp-v" : true,
+                    "description" : "tropical fruit and passionfruit with intense stone fruit flavours",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "sauvignon blanc" : {
+            "name" : "sauvignon blanc",
+            "content" : {
+                "church road" : {
+                    "name" : "church road",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "grassy and herbaceous characteristics overlaid and softened with lifted, fresh tropical fruit flavoursand just a touch of oak",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 10,
+                    "imp-gf" : true
+                },
+                "triplebank awatere valley" : {
+                    "name" :"triplebank awatere valley",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "displays typical tomato stalk characteristics from the awatere valley, with stone fruit and pineapple aromas, complemenets by fennel notes",                    
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                },
+                "boundary rapaura road" : {
+                    "name" : "boundary rapaura road",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "this wine has rich,ripe tropical fruit flavours and a zesty finish",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "chardonnay" : {
+            "name" : "chardonnay",
+            "content" : {
+                "church road mcdonald series" : {
+                    "name" : "church road mcdonald series",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "A richly textured chardonnay with a delicious nuttiness on the palate",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 10,
+                    "imp-gf" : true
+                },
+                "boundary tuki tuki road" : {
+                    "name" : "boundary tuki tuki road",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "passionfruit and pineapple aromas, a lovely and well-balanced chardonnay",
+                    "wine-location" : "hawkes's bay",
+                    "small-price" : 9,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "riesling" : {
+            "name" : "riesling",
+            "content" : {
+                "camshorn classic riesling" : {
+                    "name" : "camshorn classic riesling",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "rich and luscious with apples strudel and honey flavours on the palate",
+                    "wine-location": "waipara",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                },
+                "stoneleigh riesling" : {
+                    "name" : "stoneleigh riesling",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "citrus and lime blosson, finishing with crisp apple acidity",
+                    "wine-location": "marlborough",
+                    "small-price" : 9,
+                    "imp-gf" : true
+                }
+                
+            }
+        },
+        "pinot gris" : {
+            "name" : "pinot gris",
+            "content" : {
+                "8 ranges pinot gris" : {
+                    "name":"8 ranges piont gris",
+                    "price" : 48,
+                    "imp-v" : true,
+                    "description" : "peaches with hint of pineapple and passionfruit with a long finish",
+                    "wine-location" : "central otago",
+                    "small-price" : 10,
+                    "imp-gf" : true
+                },
+                "stoneleigh latitude pinot gris" : {
+                    "name":"stoneleigh latitude pinot gris",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "ripe nectarine, nashi pear and honeysuckle, with a spicy floral finish",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                },
+                "boundary paper lane piont gris" : {
+                    "name":"boundary paper lane piont gris",
+                    "price" : 43,
+                    "imp-v" : true,
+                    "description" : "pear and stone fruits with gentle honey flavours",
+                    "wine-location" : "marlborough",
+                    "small-price" : 9,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "rose" : {
+            "name" : "ros\u00C9",
+            "content" : {
+                "8 ranges pinot noir ros" :{
+                    "name" : "8 ranges pinot noir ros\u00C9",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "description" : "fresh strawberries and raspberries with a smooth, creamy texture with a crisp finish",
+                    "wine-location" : "alexandra",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "pinot noir" : {
+            "name" : "pinot noir",
+            "content" : {
+                "8 ranges 'barrel selection' 2009'" : {
+                    "name" : "8 ranges 'barrel selection' 2009",
+                    "price" : 65,
+                    "imp-v" : true,
+                    "wine-location" : "alexandra",
+                    "description" : "cheeires and berry-fruits with a smokey savoury complexity and hints of local thyme",
+                    "imp-gf" : true
+                },
+                "8 ranges 'estate' pinot noir" : {
+                    "name" : "8 ranges 'estate' pinot noir",
+                    "price" : 50,
+                    "imp-v" : true,
+                    "wine-location" : "alexandra",
+                    "description" : "spicy and savoury with bright flavours of dark cherries and boysenberries",
+                    "small-price" : 10.5,
+                    "imp-gf" : true
+                },
+                "the last shepherd pinot noir" : {
+                    "name" : "the last shepherd pinot noir",
+                    "price" : 48,
+                    "wine-location" : "central otago",
+                    "imp-v" : true,
+                    "description" : "dark cherry and plum with savoury toasty overtones and a lingering finish",
+                    "small-price" : 10,
+                    "imp-gf" : true
+                },
+                "triplebank pinot noir" : {
+                    "name" : "triplebank pinot noir",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "wine-location" : "awatere valley, marlborough",
+                    "description" : "bright berry fruit characters wih dried herb, clove and cinnamon aromas",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                },
+                "8 ranges trail rider pinot noir" : {
+                    "name" :  "8 ranges trail rider pinot noir",
+                    "price" : 45,
+                    "imp-v" : true,
+                    "wine-location" : "alexandra",
+                    "description" : "black berry-fruits with hints of the local thyme, and a slightly smokey finish",
+                    "small-price" : 9.5,
+                    "imp-gf" : true
+                }
+            }
+        },
+        "whiskey" : {
+            "name" : "whiskey",
+            "content" : {
+                "chivas regal 12yo" : {
+                    "name" : "chivas regal 12yo",
+                    "price" : 10,
+                    "imp-v" : true,
+                    "description" : "full, rich taste of honey and ripe apples, with vanilla, hazelnut and butterscotch notes",
+                    "imp-gf" : true
+                },
+                "the glenlivet founder's reserve" : {
+                    "name" : "the glenlivet founder's reserve",
+                    "price" : 11,
+                    "imp-v" : true,
+                    "description" : "sweet, fruit notes of zesty oranges and pears, with a hint of candy toffee apples and a smooth finish",
+                    "imp-gf" : true
+                },
+                "aberlour 12yo" : {
+                    "name" : "aberlour 12yo",
+                    "price" : 12,
+                    "imp-v" : true,
+                    "description" : "a fine sherried character, balanced with rich chocoloate, toffee, cinnamon, and ginger spiciness",
+                    "imp-gf" : true
+                },
+                "strathisla 12yo" : {
+                    "name" : "strathisla 12yo",
+                    "price" : 14.5,
+                    "imp-v" : true,
+                    "description" : "notes of sultanas and cinnamon pastries, allspice, cooked apple and mince pies",
+                    "imp-gf" : true
+                },
+                "the glenlivet 15yo french oak" : {
+                    "name" : "the glenlivet 15yo french oak",
+                    "price" : 19.5,
+                    "imp-v" : true,
+                    "description" : "intense and sweet with hints of citrus truit, notes of ripte mango, cinnamon and white pepper, with a long, creamy finish",
+                    "imp-gf" : true
+                }
+            }
+        },
+        "syrah and shiraz" : {
+            "name" : "syrah and shiraz",
+            "content" : {
+                "double barrel barossa shiraz" : {
+                    "name" : "double barrel barossa shiraz",
+                    "price" : 48,
+                    "small-price" : 10,
+                    "imp-v" : true,
+                    "description" : "generous, full palate with an enticing mix of sweet red fruits and dark chocoloate",
+                    "imp-gf" : true
+                },
+                "george wyndham founders reserve shiraz" : {
+                    "name" : "george wyndham founders reserve shiraz",
+                    "price" : 45,
+                    "small-price" : 9.5,
+                    "imp-v" : true,
+                    "wine-location" : "australia",
+                    "description" : "crammed with ripe plum, black cherry and mint, yet above all, profoundly soft",
+                    "imp-gf" : true
+                },
+                "boundary vineyards farm rd syrah" : {
+                    "name" : "boundary vineyards farm rd syrah",
+                    "price" : 43,
+                    "small-price" : 9,
+                    "wine-location" : "hawke's bay",
+                    "imp-v" : true,
+                    "description" : "berry fruit and plum is complemented spice aromas",
+                    "imp-gf" : true
+                    
+                }
+            }
+        },
+        "cabernet sauvignon and merlot" : {
+            "name" : "cabernet sauvignon and merlot",
+            "content" : {
+                "double barrel coonawarra" : {
+                    "name" : "double barrel coonawarra",
+                    "price" : 48,
+                    "small-price" : 10,
+                    "imp-v" : true,
+                    "description" : "cassis aromas with mint, dark olive and caramel notes. with sweet and toasty finish",
+                    "imp-gf" : true
+                },
+                "church road macdonald series merlot" : {
+                    "name" : "church road macdonald series merlot",
+                    "price" : 48,
+                    "small-price" : 10,
+                    "imp-v" : true,
+                    "wine-location" : "hawke's bay",
+                    "description" : "rich, dark berry and plym fruits, fragrant violet notes and a touch of spice",
+                    "imp-gf" : true
+                },
+                "stoneleigh merlot" : {
+                    "name" : "stoneleigh merlot",
+                    "price" : 43,
+                    "small-price" : 9,
+                    "imp-v" : true,
+                    "wine-location" : "marlborough",
+                    "description" : "ripe blackberry fruit and mocha flavours, with a lingering berry fruit finish",
+                    "imp-gf" : true
+                }
+            }
+        }       
+    },
+    "dessert" : {
+        "dessert" : {
+            "name" : "dessert",
+            "content" : {
+                "sundae" : {
+                    "name" : "sundae",
+                    "gluten-free" : true,
+                    "price" : 9,
+                    "description" : "ice cream with a choice of passionfruit, chocolate, caramel or mixed berry",
+                    "imp-v" : true
+                },
+                "eureka chocolate brownie" : {
+                    "name" : "eureka chocolate brownie",
+                    "some-gf" : true,
+                    "price" : 13.5,
+                    "description" : "warmed with a berry compote, ice cream and cream",
+                    "imp-v" : true
+                },
+                "sticky toffee pudding" : {
+                    "name" : "stick toffee pudding",
+                    "price" : 13.5,
+                    "description" : "a dark moist pudding, butterscotch sauce cream and ice cream",
+                    "imp-v" : true
+                },
+                "creme brulee" : {
+                    "name" : "cr\u00E8me brulee",
+                    "dairy-free" : true,
+                    "some-gf" : true,
+                    "price" : 13.5,
+                    "description" : "coconut, orange and cardamom, caramel crust served with a raspberry sorbet",
+                    "imp-v" : true
+                },
+                "banoffee pie" : {
+                    "name" : "banoffee pie",
+                    "price" : 13.5,
+                    "description" : "classic dessert of caramel, bananas, cream and ice cream",
+                    "imp-v" : true
+                }
+            }
+        }
+    },
+    "kids" : {
+        "mains" : {
+            "name" : "mains",
+            "content" : {
+                "chicken pasta" : {
+                    "name" : "chicken pasta",
+                    "price" : 14,
+                    "description" : "smoked chicken, penne pasta in a creamy sauce",
+                    "some-gf" : true,
+                    "some-v" : true
+                },
+                "chicken sandwich" : {
+                    "name" : "chicken sandwich",
+                    "price"  : 14,
+                    "description" : "chicken, bacon, lettyce, tomato, and cheese served with fries"
+                },
+                "nachos" : {
+                    "name" : "nachos",
+                    "gluten-free" : true,
+                    "price" : 14,
+                    "some-v" : true,
+                    "description" : "choice of chicken, beef or vegetarian on corn chips, melted  cheese with salsa and sour cream on the side"
+                },
+                "fish and chips" : {
+                    "name" : "fish and chips",
+                    "price" : 14,
+                    "description" : "f.o.d, fries house made tartare & heaps of tomato sauce"
+                },
+                "wrap" : {
+                    "name" : "wrap",
+                    "price" : 14,
+                    "description" : "chicken, beef or vegetarian with salad in a tortilla served wedges and sour cream",
+                    "some-v" : true
+                }
+            }
+        },
+        "desserts" : {
+            "name" : "desserts",
+            "content" : {
+                "banana split" : {
+                    "name" : "banana split",
+                    "price" : 6,
+                    "description" : "ice cream with caramel, mixed berry or chocolate",
+                    "imp-v" : true
+                },
+                "sundae" : {
+                    "name" : "sundae",
+                    "price" : 6,
+                    "description" : "ice cream with caramel, mixed berry or chocolate",
+                    "imp-v" : true
+                }
+            }
+        }
+    },
+    "main" : {
+        "to share" : {
+            "extra" : ". . .all day",
+            "priority" : 1,
+            "name" : "to share",
+            "content" : {
+                "fries" : {
+                    "name" : "fries",
+                    "gluten-free" : true,
+                    "price" : 7.5,
+                    "description" : "with aioli and tomato sauce",
+                    "imp-v" : true
+                },
+                "garlic bread" : {
+                    "name" : "garlic bread",
+                    "price" : 9,
+                    "description" : "toasted sourdough with our house roasted garlic butter",
+                    "imp-v" : true
+                },
+                "focaccia bread" : {
+                    "name" : "focaccia bread",
+                    "price" : 9.5,
+                    "description" : "toasted served with olive oil and dukkah",
+                    "imp-v" : true
+                },
+                "eureka cheese rolls" : {
+                    "name" : "eureka cheese rolls",
+                    "price" : 13,
+                    "description" : "with a tomato relish",
+                    "imp-v" : true
+                },
+                "nachos" : {
+                    "name" : "nachos",
+                    "gluten-free" : true,
+                    "description" : "chicken, beef or vegetarian melted cheese, salsa and sour cream",
+                    "price" : 18.5,
+                    "some-v" : true
+                },
+                "anti-pasto platter" : {
+                    "name" : "anti-pasto platter",
+                    "price" : 28,
+                    "some-gf" : true,
+                    "some-v" : true,
+                    "description" : "cheeses, cured meats, pickles and toasted ciabatta"
+                }
+            }
+        },
+        "burgers" : {
+            "extra" : ". . .at lunch & dinner . . served with fries",
+            "priority" : 3,
+            "name" : "burgers",
+            "content" : {
+                "cajun beef" : {
+                    "name" : "cajun beef",
+                    "price" : 19.5,
+                    "description" : "smoked chipotle aioli and onion rings"
+                },
+                "chicken" : {
+                    "name" : "chicken",
+                    "price" : 19.5,
+                    "description" : "bacon, avocado and garlic aioli"
+                },
+                "fish" : {
+                    "name" : "fish",
+                    "price" : 19.5,
+                    "description" : "f.o.d, house made tartare and a fried egg"
+                },
+                "pulled pork" : {
+                    "name" : "pulled pork",
+                    "price" : 19.5,
+                    "description" : "streaky bacon and apple slaw"
+                },
+                "vegetarian" : {
+                    "name" : "vegetarian",
+                    "vegetarian" : true,
+                    "price" : 19.5,
+                    "description" : "chickpea and lentil cake, feta and tomato relish"
+                }
+            }
+        },
+        "things too good to share" : {
+            "extra" : ". . . available lunch & dinner",
+            "priority" : 2,
+            "name" : "things too good to share",
+            "content" : {
+                "soup" : {
+                    "name" : "soup",
+                    "price" : 12,
+                    "some-gf" : true,
+                    "description" : "served with bread (gf without the bread)"
+                },
+                "seafood chowder" : {
+                    "name" : "seafood chowder",
+                    "price" : 14.5,
+                    "some-gf" : true,
+                    "description" : "thick and creamy served with bread (gf without the bread)"
+                },
+                "mushroom stack" : {
+                    "name" : "mushroom stack",
+                    "price" : 18.5,
+                    "vegetarian" : true,
+                    "description" : "risotto cake, field mushroom, feta and rocket pesto"
+                },
+                "venison pot pie" : {
+                    "name" : "venison pot pie",
+                    "price" : 19.5,
+                    "description" : "tender slow cooked venison topped with a cheesy mash"
+                },
+                "caesar salad" : {
+                    "name" : "caesar salad",
+                    "some-gf" : true,
+                    "some-v" : true,
+                    "price" : 18.5,
+                    "description" : "cos croutons, parmesan, anchovies, egg and bacon",
+                    "more" : "(with chicken $22.50)"
+                },
+                "fish and chips" : {
+                    "name" : "fish and chips",
+                    "price" : 18,
+                    "description" : "fish of the day, tartare and tomato sauce"
+                },
+                "penne pasta" : {
+                    "name" : "penne pasta",
+                    "some-v" : true,
+                    "some-gf" : true,
+                    "price" : 19.5,
+                    "description" : "smoked chicken, sundried tomatoes in a cream pesto sauce"
+                }
+            }
+        },
+        "a spot of dinner" : {
+            "extra" : ". . .from 5.30pm",
+            "priority" : 4,
+            "name" : "a spot of dinner",
+            "content" : {
+                "blue cod" : {
+                    "name" : "blue cod",
+                    "price" : 29,
+                    "description" : "always fresh beer battered with fries and house made tartare"
+                },
+                "aged angus ribeye" : {
+                    "name" : "aged angus ribeye",
+                    "price" : 31,
+                    "gluten-free":true,
+                    "description" : "choice of garlic butter, mushroom or peppercorn sauce on roasted potatoes"
+                },
+                "chicken breast" : {
+                    "name" : "chicken breast",
+                    "price" : 29.5,
+                    "description" : "filled with a herb and cranberry stuffing on a potato rosti"
+                },
+                "lamb shank" : {
+                    "name" : "lamb shank",
+                    "price" : 32.5,
+                    "gluten-free" : true,
+                    "description" : "cardrona merino shank slow cooked served on mash"
+                },
+                "pork belly" : {
+                    "name" : "pork belly",
+                    "gluten-free" : true,
+                    "price" : 32,
+                    "description" : "twice cooked on kumara mash with a rich gravy"
+                },
+                "salmon fillet" : {
+                    "name" : "salmon fillet",
+                    "some-gf" : true,
+                    "price" : 31,
+                    "description" : "moroccan spiced stewart island salmon pan-fried served with couscous and tzatziki"
+                }
+            }
+        }
+    }
+}
