@@ -41,6 +41,17 @@ nav ul li a {
         text-align: center;
         margin: 0 auto;
     }
+
+}
+
+
+
+
+
+@media only screen and (min-width: 767px) {
+    a .left {
+        float: left;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -161,6 +172,11 @@ nav ul li a:hover {
     line-height: 38px;
 }
 
+.fa-facebook:hover{
+    color: #305891 !important;
+}
+
+
 .footer-distributed .footer-center p {
     display: inline-block;
     color: #ffffff;
@@ -245,14 +261,10 @@ nav ul li a:hover {
 
 .logo {
     float: left;
-    width: 500px;
-}
-
-a img {
-    float: left;
+    width: 300px;
 }
 
 nav ul li {
      font-weight: 700;
 }
-}
+

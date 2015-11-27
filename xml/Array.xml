@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<drinks>
+    <beers>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   <beer>Hallertau # 3 Red I.P.A</beer><beer>Hallertau # 4 Dark Ale</beer><beer>8 Wired Farmhouse Pale Ale</beer><beer>8 Wired Semi-Conducter</beer><beer>Harringtons Rogue Hop Pilsner</beer><beer>8 Wired Flat White Stout (Nitro)</beer><beer>Hallertau # 2 Pale Ale</beer><beer>Harringtons YankDak</beer><beer>Eagle Brewing "Ella" Saison</beer><beer>Invercargill Brewery Stanley Green (Nitro)</beer></beers>
+    <housepours>
+        <housepour>Moa Sessionable Pale Ale</housepour>
+        <housepour>Moa Temperance Pale Ale</housepour>
+        <housepour>Moa Methode Pilsner </housepour>
+        <housepour>Moa Original Lager</housepour>
+        
+    <housepour>Emersons Pilsner</housepour><housepour>Moa Apple Cider</housepour></housepours>
+</drinks>

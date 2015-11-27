@@ -2,7 +2,7 @@
    
     <nav class="navbar navbar-default navbar-fixed-top topnav header" role="navigation">
         <div class="container topnav">
-        <a href="./index.php">  <img class="img-responsive center-block index" src="./img/logo.png" alt="Eureka"> </a>
+        <a href="./index.php">  <img class="img-responsive center-block index left" src="./img/logo.png" alt="Eureka"> </a>
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
 

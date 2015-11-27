@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <drinks>
     <beers>
-        <beer>September 24 - Scotts Brewery Pinot Porter now available</beer>
-        <beer>September 24 - Moa South Pacific I.P.A now available</beer>
-        <beer>September 22 - Golden Eagle Red I.P.A now available</beer>
-        <beer>September 24 - Three Boys Wheat now available</beer>
-        <beer>September 20 - Golden Eagle Marilyn now available</beer>
-        <beer>September 17 - Renaissance Paradox Pilsner now available</beer>
-        <beer>September 17 - 8 Wired Flat White (Nitro) now available</beer>
-        <beer>September 14 - Tuatara Iti now available</beer>
-        <beer>September 14 - Three Boys I.P.A now available</beer>
-        <beer>September 10 - Renaissance Elemental Porter now available</beer>
-   </beers>
+
+
+
+
+
+
+
+
+
+
+        <beer>Moa "Festive I.P.A"</beer><beer>Tuatara American Pale Ale</beer><beer>Invercargill Brewery Pitch Black (Nitro)</beer><beer>Tuatara  "ITI" Pale Ale</beer><beer>Croucher Pilsner</beer><beer>Invercargill Brewery Stanley Green (Nitro)</beer><beer>Mussel Inn Feijoa Cider</beer><beer>Tuatara Chocolate Stout</beer><beer>Hallertau #4 Schwarzbier</beer><beer>Three Boys Wheat</beer></beers>
     <housepours>
-        <housepour>Moa Sessionable Pale Ale is available</housepour>
-        <housepour>Moa Temperance Pale Ale is available</housepour>
-        <housepour>Moa Methode Pilsner is available</housepour>
-        <housepour>Moa Original Lager is available</housepour>
-        <housepour>Emersons Pilsner is available</housepour>
-    </housepours>
+        <housepour>Moa Sessionable Pale Ale</housepour>
+        <housepour>Moa Temperance Pale Ale</housepour>
+        <housepour>Moa Methode Pilsner </housepour>
+        <housepour>Moa Original Lager</housepour>
+
+        <housepour>Emersons Pilsner</housepour><housepour>Moa Apple Cider</housepour></housepours>
 </drinks>

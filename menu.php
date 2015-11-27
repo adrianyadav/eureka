@@ -63,7 +63,7 @@
                 <input type="checkbox" ng-model="glute" ng-change="wasteFuns()">
             </div>
 
-            <div ng-repeat="subMenu in removeHide(menuItems[url])" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
+            <div ng-repeat="subMenu in removeHide(menuItems[url]) | object2Array| orderBy:'priority'" ng-class="white(subMenu['name']) | removeSpaces" ng-hide="!hasItems(subMenu.name, waste)">
                 <h1 ng-bind="subMenu.name"></h1>
                 <span ng-bind="subMenu.extra" class="extraInfo"></span>
                 <hr>
@@ -86,24 +86,15 @@
                         <ul ng-if="isObject(item.description)">
                             <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>
                         </ul>
+                        <p ng-bind="item.more"></p>
                     </div>
                 </div>
-                    
-                    <span ng-if="item['gluten-free']">(gf)</span>
-                    <span ng-if="item['some-gf']">(gf**)</span>
-                    <span ng-if="item.vegetarian">(v)</span>
-                    <span ng-if="item['some-v']">(v**)</span>      
-                    <span ng-if="item['dairy-free']">(df)</span>                  
-                    <p ng-if="isString(item.description)" ng-bind="item.description"></p>
-                    <ul ng-if="isObject(item.description)">
-                        <li class="desc-repeat" ng-repeat="desc in item.description track by $index" ng-bind="desc"></li>
-                    </ul>
             </div>
 
             <div class="pure-u-1-1 info">
                 <p>Please inform staff of any allergies or requirements as meals can be changed to suit your needs</p>
                 <p>
-                    Gluten free add $3 / gf = glutn free/ df = dairy free / gf** = gluten free available / v = vegetarian / v** = vegetarian available
+                    Gluten free add $3 / gf = gluten free/ df = dairy free / gf** = gluten free available / v = vegetarian / v** = vegetarian available
                 </p>
             </div>
         </section>

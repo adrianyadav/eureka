@@ -30,10 +30,6 @@
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
-    
-
 
 
 
@@ -48,7 +44,7 @@
 
 <body>
 
-    <?php include 'include/nav.php';?>
+    <?php include 'include/nav.php' ?>
 
     <!-- Header -->
     <div class="intro-header">
@@ -59,7 +55,7 @@
                     <div class="intro-message">
                         <ul id="open">
                             <li class="subheading">Opening Hours</li>
-                            <li>Monday to Wensday - 11:30am to 10pm</li>
+                            <li>Monday to Wednesday - 11:30am to 10pm</li>
                             <li>Thursday and Friday - 11:30am to late</li>
                             <li>Saturday - 10:30am to late</li>
                             <li>Sundays - 10:30am to 9pm </li>
@@ -110,14 +106,13 @@
     </div>
 
 
-        <div class="container">
+        <div class="container beers">
             <div class="row">
                 <div class="col-lg-12">                
-                    <?php include 'include/beers.php';?>
+                    <?php include 'include/beers.php' ?>
                 </div>
             </div>
 
-        </div>
 
     <div class="banner" id="banner2">
 
@@ -137,7 +132,7 @@
 
     <div class="container center-form" id="contact">
         <div class="row">
-        <form action="https://getsimpleform.com/messages?form_api_token=86825f5a963db56bd811ea8543d3da3d" method="post">
+<form action="https://getsimpleform.com/messages?form_api_token=eedb4d5fddba3ec04c04c194b85ee5e4" class="contact-form" method="post">
                 <div class="col-lg-12">
                     <h2> Send us  a message </h2>
                     <div class="form-group">
@@ -167,21 +162,18 @@
                     <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
                 </div>
             </form>
-            <hr class="featurette-divider hidden-lg">
 
         </div>
 
     </div>
     <!-- /.banner -->
 
-   <?php include 'include/footer.php';?>
+   <?php include 'include/footer.php'?>
     <!-- jQuery -->
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script src="js/homepage.js"></script>
     <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
+    <script src="js/bootstrap.min.js"></script
 </body>   
 
 </html>

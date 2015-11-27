@@ -32,7 +32,7 @@
                     "gluten-free": true, 
                     "vegetarian" : false, 
                     "price" : 9.5, 
-                    "description": "slow belly tossed in bbq sauce"            
+                    "description": "slow cooked belly tossed in bbq sauce"            
                 },
                 "eureka cheese rolls" : {
                     "name" : "eureka cheese rolls", 
@@ -49,7 +49,7 @@
                     "price" : 13.5, 
                     "some-v" : true,
                     "description": {
-                        "1" : "pulled pore, apple slaw",
+                        "1" : "pulled pork, apple slaw",
                         "2" : "cod goujons, lettuce, tomato, and house made tartare",
                         "3" : "beetroot, haloumi and chili jam (v)"
                     }
@@ -501,6 +501,8 @@
     },
     "main" : {
         "to share" : {
+            "extra" : ". . .all day",
+            "priority" : 1,
             "name" : "to share",
             "content" : {
                 "fries" : {
@@ -519,7 +521,7 @@
                 "focaccia bread" : {
                     "name" : "focaccia bread",
                     "price" : 9.5,
-                    "description" : "toasted server with olive oil and dukkah",
+                    "description" : "toasted served with olive oil and dukkah",
                     "imp-v" : true
                 },
                 "eureka cheese rolls" : {
@@ -545,6 +547,8 @@
             }
         },
         "burgers" : {
+            "extra" : ". . .at lunch & dinner . . served with fries",
+            "priority" : 3,
             "name" : "burgers",
             "content" : {
                 "cajun beef" : {
@@ -576,13 +580,15 @@
             }
         },
         "things too good to share" : {
+            "extra" : ". . . available lunch & dinner",
+            "priority" : 2,
             "name" : "things too good to share",
             "content" : {
                 "soup" : {
                     "name" : "soup",
                     "price" : 12,
                     "some-gf" : true,
-                    "description" : "served with bear (gf without the bread)"
+                    "description" : "served with bread (gf without the bread)"
                 },
                 "seafood chowder" : {
                     "name" : "seafood chowder",
@@ -606,7 +612,8 @@
                     "some-gf" : true,
                     "some-v" : true,
                     "price" : 18.5,
-                    "description" : "cos croutons, parmesan, anchovies, egg and bacon (with chicken $22.5)"
+                    "description" : "cos croutons, parmesan, anchovies, egg and bacon",
+                    "more" : "(with chicken $22.50)"
                 },
                 "fish and chips" : {
                     "name" : "fish and chips",
@@ -623,6 +630,8 @@
             }
         },
         "a spot of dinner" : {
+            "extra" : ". . .from 5.30pm",
+            "priority" : 4,
             "name" : "a spot of dinner",
             "content" : {
                 "blue cod" : {
@@ -645,19 +654,19 @@
                     "name" : "lamb shank",
                     "price" : 32.5,
                     "gluten-free" : true,
-                    "description" : "cardrona merino shank slow cooked server on mash"
+                    "description" : "cardrona merino shank slow cooked served on mash"
                 },
                 "pork belly" : {
                     "name" : "pork belly",
                     "gluten-free" : true,
                     "price" : 32,
-                    "description" : "twice cooked on jumara mash with a rich gravy"
+                    "description" : "twice cooked on kumara mash with a rich gravy"
                 },
                 "salmon fillet" : {
                     "name" : "salmon fillet",
                     "some-gf" : true,
                     "price" : 31,
-                    "description" : "moroccan spiced stewart island slamon pan-fried served with couscous and tzatziki"
+                    "description" : "moroccan spiced stewart island salmon pan-fried served with couscous and tzatziki"
                 }
             }
         }
