@@ -65,7 +65,7 @@ if ($_SESSION["login"] != "true") {
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Eureka Admin Page</h2>
-
+                <p style="text-align:center;"><a href="menuadmin.php">Go to menu admin page</a></p>
                 <p class="section-heading lead"> Here you can add, delete and edit existing beers and house pours.</p>
             </div>
         </div>
