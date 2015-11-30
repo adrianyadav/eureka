@@ -37,6 +37,8 @@ app.controller('menuCtrl', function ($location, $scope, $http, $filter, $window,
     *********************************/
     $scope.waste = 0;
 
+    $scope.hides = {};
+    
     $http.get('json/menu-items.json').then(function (res) {
         $scope.menuItems = res.data;
         $scope.titles = Object.keys($scope.menuItems);
@@ -79,7 +81,7 @@ app.controller('menuCtrl', function ($location, $scope, $http, $filter, $window,
             }
         });
         if (!allG) {
-            $scope.url = 'main';
+            $scope.url = 'food';
         }
         $scope.subMenuList = keys[$scope.url];
     }
@@ -111,7 +113,7 @@ app.controller('menuCtrl', function ($location, $scope, $http, $filter, $window,
             }
         }
         $scope.titles = Object.keys($scope.menuItems);
-        $scope.url = 'main';
+        $scope.url = 'food';
         $scope.url = name;
     }
     

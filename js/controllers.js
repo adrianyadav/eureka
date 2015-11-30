@@ -55,7 +55,7 @@ app.controller('menuCtrl', function($location, $scope, $http, $filter, $window, 
             }
         });
         if (!allG) {
-            $scope.url = 'main';
+            $scope.url = 'food';
         }
         $scope.subMenuList = keys[$scope.url];
     }

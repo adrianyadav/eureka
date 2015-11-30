@@ -107,7 +107,7 @@
 </div>
 
 <div class='col-sm-6 housePourContainer'>
-    <h3 class="section-heading">House Pours</h3>
+    <h3 class="section-heading">Mainstays</h3>
     <table class="table table-hover table-bordered">
         <tbody>
         <tr>

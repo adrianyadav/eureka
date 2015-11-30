@@ -53,13 +53,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="intro-message">
-                        <ul id="open">
-                            <li class="subheading">Opening Hours</li>
-                            <li>Monday to Wednesday - 11:30am to 10pm</li>
-                            <li>Thursday and Friday - 11:30am to late</li>
-                            <li>Saturday - 10:30am to late</li>
-                            <li>Sundays - 10:30am to 9pm </li>
-                        </ul>
+                        <?php include 'include/hours.php' ?>
                     </div>
                 </div>
             </div>
@@ -83,7 +77,10 @@
                     </p>
 
                     <p class="lead">
-                        The answer is, it just does! So fine person who stumbled through our doors with glee or anticiaption, thank you for reading this far and welcome. Take a look around, make yourself known and explore our menus. Drool over our craft beers and wine, and relax. Eureka Season. Social. Simple.</p>
+                        The answer is, it just does! So fine person who stumbled through our doors with glee or anticiaption, thank you for reading this far and welcome. Take a look around, make yourself known and explore our menus. Drool over our craft beers and wine, and relax.
+                    </p>
+                        
+                    <p class="lead"> Eureka Seasonal. Social. Simple.</p>
                 </div>
             </div>
 

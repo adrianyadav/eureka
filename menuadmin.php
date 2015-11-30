@@ -131,7 +131,7 @@ if ($_SESSION["login"] != "true"){
                 <input type="number" ng-model="subMenu.priority">
                 <hr>
                 <div class="pure-u-lg-1-4 pure-u-md-1-2" ng-repeat="item in subMenu.content | object2Array | orderBy:'price' | filter:search                                                                         |isVegetarian:vege | isGF: glute">
-                    <div>
+                    <div ng-init="hides[item.name] = false" ng-hide="hides[item.name]">
                         <span class="pure-u-3-4">
                         <h1 ng-bind="item.name"></h1>
                         <p ng-if="item['wine-location']"ng-bind="'(' + item['wine-location'] + ')'"></p>
@@ -151,6 +151,36 @@ if ($_SESSION["login"] != "true"){
                         </ul>
                         <p ng-bind="item.more"></p>
                         <button type="button" class="pure-button btn" ng-click="deleteItem(subMenu.content, [item.name][0])">Delete</button>
+                        <button type="button" class="pure-button btn" ng-click="hides[item.name] = true">Edit</button>
+                    </div>
+                    <div ng-init="hides[item.name] = false" ng-hide="!hides[item.name]">
+                        <input type="text" ng-model="item.name">
+                        <input type="text" ng-model="item['wine-location']">
+                        <br>
+                        <p>Price: </p>
+                        <input type="number" ng-model="item['price']">
+                        <p>Small Price: </p>
+                        <input type="number" ng-model="item['small-price']">
+                        <br> gf:
+                        <input type="checkbox" ng-model="item['gluten-free']"> gf available:
+                        <input type="checkbox" ng-model="item['some-gf']"> implied gf:
+                        <input type="checkbox" ng-model="item['imp-gf']"> vegetarian:
+                        <input type="checkbox" ng-model="item['vegetarian']"> vegetarian available:
+                        <input type="checkbox" ng-model="item['some-v']"> implied vegetarian:
+                        <input type="checkbox" ng-model="item['imp-v']"> dairy free:
+                        <input type="checkbox" ng-model="item['dairy-free']">
+                        <br> Tags:
+                        <span ng-if="item['gluten-free']">(gf)</span>
+                        <span ng-if="item['some-gf']">(gf**)</span>
+                        <span ng-if="item.vegetarian">(v)</span>
+                        <span ng-if="item['some-v']">(v**)</span>
+                        <span ng-if="item['dairy-free']">(df)</span>
+                        <br>
+                        <input type="text" ng-model="item.description">
+                        <input type="text" ng-model="item.more">
+                        
+                        <br>
+                        <button type="button" class="pure-button btn" ng-click="hides[item.name] = false">Done</button>
                     </div>
                 </div>
 
