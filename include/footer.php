@@ -7,8 +7,10 @@
         <div class="footer-center">
 
             <div>
+               <a href="https://www.google.co.nz/maps/place/116+Albany+St,+North+Dunedin,+Dunedin+9016/@-45.8680028,170.5125222,17z/data=!3m1!4b1!4m2!3m1!1s0xa82eac6bdde26eb9:0x66a79aa5b362a828">
                 <i class="fa fa-map-marker"></i>
                 <p>116 Albany St <span>Dunedin, New Zealand</span> </p>
+                </a>
             </div>
 
             <div>
