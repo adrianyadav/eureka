@@ -16,7 +16,7 @@ $("#contactForm").validate({
                 if (response.responseText == "true") {
                     $.ajax({
                         dataType: 'jsonp',
-                        url: "http://getsimpleform.com/messages/ajax?form_api_token=6af572a5c833e148c15321b131b2628e",
+                        url: "http://getsimpleform.com/messages/ajax?form_api_token=eedb4d5fddba3ec04c04c194b85ee5e4",
                         data: formData[0],
                     }).done(function () {
                         window.location.href = "/index.php";
