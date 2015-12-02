@@ -11,12 +11,12 @@
 
 
 
-        <beer>Moa "Festive I.P.A"</beer><beer>Tuatara American Pale Ale</beer><beer>Invercargill Brewery Pitch Black (Nitro)</beer><beer>Tuatara  "ITI" Pale Ale</beer><beer>Croucher Pilsner</beer><beer>Invercargill Brewery Stanley Green (Nitro)</beer><beer>Mussel Inn Feijoa Cider</beer><beer>Tuatara Chocolate Stout</beer><beer>Hallertau #4 Schwarzbier</beer><beer>Three Boys Wheat</beer></beers>
+        <beer>Epic Pale Ale</beer><beer>Tuatara American Pale Ale</beer><beer>Invercargill Brewery Pitch Black (Nitro)</beer><beer>Tuatara  "ITI" Pale Ale</beer><beer>Croucher Pilsner</beer><beer>Invercargill Brewery Stanley Green (Nitro)</beer><beer>Hallertau # 2 Pale Ale</beer><beer>Tuatara Chocolate Stout</beer><beer>8 Wired Semi Conductor Pale Ale</beer><beer>Raindogs "Beached As" </beer></beers>
     <housepours>
         <housepour>Moa Sessionable Pale Ale</housepour>
         <housepour>Moa Temperance Pale Ale</housepour>
         <housepour>Moa Methode Pilsner </housepour>
         <housepour>Moa Original Lager</housepour>
 
-        <housepour>Emersons Pilsner</housepour><housepour>Moa Apple Cider</housepour></housepours>
+        <housepour>Moa Apple Cider</housepour><housepour>Emersons Plisner</housepour></housepours>
 </drinks>

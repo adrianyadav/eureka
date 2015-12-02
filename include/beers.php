@@ -54,7 +54,7 @@
                        echo "<img src = 'img/beers.png' alt = '$beer' >";
                     }
                        echo " <div class='carousel-caption'>
-                        <h3>$beer</h3>";
+                        <h3 class='carousel-desc'>$beer</h3>";
                         ?>
                         <?php
                           if (!empty($description)){
@@ -74,7 +74,7 @@
                     echo "<img src = 'img/beers.png' alt = '$beer' >";
                 }
                         echo "<div class='carousel-caption'>
-                        <h3>$beer</h3>";
+                        <h3 class='carousel-desc'>$beer</h3>";
                         ?>
                         <?php
                          if (!empty($description)){
@@ -107,7 +107,7 @@
 </div>
 
 <div class='col-sm-6 housePourContainer'>
-    <h3 class="section-heading">House Pours</h3>
+    <h3 class="section-heading">Mainstays</h3>
     <table class="table table-hover table-bordered">
         <tbody>
         <tr>

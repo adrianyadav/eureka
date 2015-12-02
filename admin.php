@@ -65,7 +65,7 @@ if ($_SESSION["login"] != "true") {
                 <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
                 <h2 class="section-heading">Eureka Admin Page</h2>
-
+                <p style="text-align:center;"><a href="menuadmin.php">Go to menu admin page</a></p>
                 <p class="section-heading lead"> Here you can add, delete and edit existing beers and house pours.</p>
             </div>
         </div>
@@ -170,6 +170,29 @@ if ($_SESSION["login"] != "true") {
             <button type="submit" class="pure-button btn">Upload image</button>
         </fieldset>
     </form>
+    
+    <?php
+    $xml = simplexml_load_file("./xml/hours.xml");
+
+    $lines = $xml->xpath('/lines/line');
+    $str = "";
+    foreach ($lines as $line) {
+        $str = $str.$line."&#10;";
+    }
+    ?>
+    
+    <form method="post" class="pure-form" action="php/edithours.php">
+        <fieldset>
+            <legend> Edit Opening Hours</legend>
+
+            <label>
+                <textarea name="hourstext"type='text' cols="40" rows="5"><?php echo $str ?></textarea>
+            </label>
+            <button type="submit" class="pure-button btn">Save</button>
+        </fieldset>
+    </form>
+    
+    
 </div>
 
 
